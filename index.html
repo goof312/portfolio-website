@@ -1,895 +1,742 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Pawan Kumavat</title>
 
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio - Pawan Kumavat</title>
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- for adding animation to website we have use AOS library 
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- for adding animation to website we have use AOS library 
     AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- hidden pop up -->
+
+  <!-- Bookstore Reservation Modal -->
+  <div class="modal fade" id="modalBookstore" tabindex="-1" aria-labelledby="modalBookstoreLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-lg for wider content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBookstoreLabel">Bookstore Reservation System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            This is a school-based Bookstore Reservation System that enables students to reserve items in advance
+            and allows administrators to efficiently manage inventory and transactions. The system is tailored to
+            support
+            walk-in payment schemes with a clear separation between online reserved stock and in-store inventory.
+          </p>
+
+          <h6>📌 Key Features:</h6>
+          <ul>
+            <li>✅ Student item reservation with quantity tracking</li>
+            <li>✅ Real-time inventory management</li>
+            <li>✅ Admin dashboard for monitoring reservations and updating stock</li>
+            <li>✅ Analytics page for tracking sales and reservation trends</li>
+            <li>✅ Login system with role-based access (Admin, Staff)</li>
+          </ul>
+
+          <h6>🔗 Project Links:</h6>
+          <ul>
+            <li>
+              <a href="https://github.com/your-username/bookstore-reservation" target="_blank">
+                🌐 GitHub Repository
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+            <li>
+              <a href="https://drive.google.com/your-link-to-materials" target="_blank">
+                📂 Project Materials (PDF, Docs, Demo Video)
+              </a>
             </li>
           </ul>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
 
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Pawan Kumavat</span>
-          </h2>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/bookstore-reservation" target="_blank" class="btn btn-primary">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Batuhan Modal -->
+  <div class="modal fade" id="modalBatuhan" tabindex="-1" aria-labelledby="modalBatuhanLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBatuhanLabel">Batuhan - Two Player Turn-Based Game</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            <strong>Batuhan</strong> is a fun two-player turn-based game developed using the Unity game engine. In each
+            turn,
+            a player gets the chance to throw a weapon and try to hit the opponent. The game is built with competitive
+            fun and simplicity in mind,
+            offering players a chance to strategize and aim precisely.
+          </p>
+
+          <h6>🎮 Key Features:</h6>
+          <ul>
+            <li>✅ Two-player local multiplayer setup</li>
+            <li>✅ Turn-based weapon-throwing mechanics</li>
+            <li>✅ Built using Unity and C#</li>
+            <li>✅ Basic physics and collision detection for hitting targets</li>
+            <li>✅ Simple and intuitive controls</li>
+          </ul>
+
+          <h6>🔗 Project Links:</h6>
+          <ul>
+            <li>
+              <a href="https://github.com/your-username/batuhan-game" target="_blank">
+                🌐 GitHub Repository
+              </a>
+            </li>
+            <li>
+              <a href="https://livemcledu-my.sharepoint.com/personal/2021jbgsahagun_live_mcl_edu_ph/_layouts/15/stream.aspx?id=%2Fpersonal%2F2021jbgsahagun%5Flive%5Fmcl%5Fedu%5Fph%2FDocuments%2FGameDev%2FUnity%2Fbatuhan%2F2024%2D03%2D07%5F13%2D10%2D10%5FEdited%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E54eabccd%2D24df%2D4d5c%2Da2a6%2D50bdd0a6f49e"
+                target="_blank">
+                📂 Game Materials (Demo Video, Docs, Executable)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/batuhan-game" target="_blank" class="btn btn-primary">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Naruto Fall Modal -->
+  <div class="modal fade" id="modalNaruto" tabindex="-1" aria-labelledby="modalNarutoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNarutoLabel">Naruto Fall - Java Mini Game</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            <strong>Naruto Fall</strong> is a simple yet engaging game built using Java. Players control Naruto and must
+            catch as many <strong>ramens</strong> as possible while avoiding the falling <strong>Rasengans</strong>.
+            The game tests the player's reflexes and reaction speed in a progressively challenging environment.
+          </p>
+
+          <h6>🎮 Key Features:</h6>
+          <ul>
+            <li>✅ Catch falling ramen to score points</li>
+            <li>✅ Dodge Rasengans to avoid losing</li>
+            <li>✅ Created using Java Swing with custom repainting and drawing logic</li>
+            <li>✅ Simple keyboard controls (left/right movement)</li>
+            <li>✅ Endless gameplay with increasing difficulty</li>
+          </ul>
+
+          <h6>🔗 Project Links:</h6>
+          <ul>
+            <li>
+              <a href="https://github.com/your-username/naruto-fall" target="_blank">
+                🌐 GitHub Repository
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1CbNzeiPWd-zRSmi3CwSuFwhJXikQaewj/view?usp=sharing"
+                target="_blank">
+                📂 Game Materials (JAR file, source code, demo video)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/naruto-fall" target="_blank" class="btn btn-primary">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Face Recognition Modal -->
+  <div class="modal fade" id="modalFaceRecognition" tabindex="-1" aria-labelledby="modalFaceRecognitionLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFaceRecognitionLabel">Face Recognition Attendance System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            This project is a <strong>Face Recognition Attendance System</strong> built using <strong>Python</strong>
+            and <strong>OpenCV</strong>. It leverages a CNN-based face detection model to locate faces in real time,
+            and a trained model to identify who the person is. Once a person is recognized, their name and login time
+            are recorded in a text-based attendance sheet.
+          </p>
+
+          <h6>🧠 Key Features:</h6>
+          <ul>
+            <li>✅ Face detection using a Convolutional Neural Network (CNN)</li>
+            <li>✅ Face recognition trained from a dataset of user images</li>
+            <li>✅ Real-time recognition via webcam or video feed</li>
+            <li>✅ Automatic attendance logging in a `.txt` file</li>
+            <li>✅ Built with Python, OpenCV, and optional support for deep learning frameworks</li>
+          </ul>
+
+          <h6>🔗 Project Links:</h6>
+          <ul>
+            <li>
+              <a href="https://github.com/your-username/face-recognition-attendance" target="_blank">
+                🌐 GitHub Repository
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1c0crpx4y_Hilm3gdk8Zk3OORZDzAoB1q/view?usp=sharing"
+                target="_blank">
+                📂 Project Materials (training data, demo video, output logs)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/face-recognition-attendance" target="_blank"
+            class="btn btn-primary">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- navbar starts -->
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+
+
+        </ul>
+      </div>
+      <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-middle">
+      <!-- here data-aos is used for adding aos animation  -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d">
+          Hello! I Am <br /><span class="c-orange">Marco Allen A</span>
+        </h2>
+        <p class="text-muted">
+          I'm a Full-Stack Web Developer and a recent graduate with a strong foundation in building fully responsive
+          websites and developing backend functionalities.
+        </p>
+        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+          Hire Me
+        </button>
+        <a href="" class="link ms-4 d-none">See My Work</a>
+      </div>
+      <div class="col-10 col-md-4 d-none d-md-block">
+        <img src="images\Marco with suit.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>My Expertise</small>
+      <!-- <h3>What I’m Passionate About</h3> -->
+    </div>
+
+    <div class="row justify-content-evenly mt-5">
+
+      <!-- Full-Stack Development -->
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img text-center">
+            <div class="img expertise-icon-wrapper">
+              <img src="images/full stack.png" class="expertise-icon" alt="Full Stack" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4>Full-Stack Development</h4>
+            <p class="text-muted">
+              I enjoy building fully responsive web applications using technologies like
+              HTML, CSS, JavaScript, Django, and ASP.NET — covering both frontend and backend.
+            </p>
+            <a href="#projects" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img text-center">
+            <div class="img expertise-icon-wrapper">
+              <img src="images/machine learning.png" class="expertise-icon" alt="Machine Learning" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4>Machine Learning</h4>
+            <p class="text-muted">
+              I’ve worked on academic and personal projects involving machine learning, using Python, scikit-learn, and
+              TensorFlow to develop and integrate intelligent models into real-world applications.
+            </p>
+            <a href="#projects" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Analytics -->
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img text-center">
+            <div class="expertise-icon-wrapper">
+              <img src="images/Data-analytics-.png" class="expertise-icon" alt="Data Analytics" />
+            </div>
+          </div>
+          <div class="content mt-3">
+            <h4>Data Analytics</h4>
+            <p class="text-muted">
+              I analyze and visualize data using tools like Pandas, Matplotlib, SQL, and Power BI. I love turning raw
+              data into meaningful insights through charts and reports.
+            </p>
+            <a href="#projects" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- expertise section ends here -->
+
+
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5" id="about">
+    <div class="row justify-content-evenly">
+
+      <!-- Left Column: Skill Progress -->
+      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+
+        <div class="row justify-content-evenly">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress html">
+                <span class="progress-value html-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">HTML</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress python">
+                <span class="progress-value python-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Python</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress django">
+                <span class="progress-value django-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Django</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress flask">
+                <span class="progress-value flask-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Flask</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress bootstrap">
+                <span class="progress-value bootstrap-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress csharp">
+                <span class="progress-value csharp-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">C#</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress aspnet">
+                <span class="progress-value aspnet-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">ASP.NET</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Skill Summary -->
+      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+        <div class="heading mt-5 mt-md-3">
+          <small>My Skills</small>
+          <h3>Passionate About Building Real-World Solutions</h3>
           <p class="text-muted">
-            I'm A Web Developer having 5 years of experience in expertise of
-            creating website with fully responsive Also with backend part too.
+            As a Computer Science student, I’ve explored both frontend and backend technologies—ranging from Django,
+            ASP.NET, and Flask to JavaScript and Bootstrap.
+          </p>
+          <p class="text-muted">
+            I enjoy learning how different technologies work together to build full-stack applications, and I continue
+            to grow by building projects that solve real-world problems.
           </p>
           <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
+            <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume"
+              style="text-decoration: none; color: #fff;">
+              Download Resume
+            </a>
           </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
         </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/banner-01.webp" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- home section ends here -->
-
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
-      <div class="heading text-center">
-        <small>My Expertise</small>
-        <h3>
-          Provide Wide Range of <br />
-          Digital Services
-        </h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Design</h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Development</h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Debugging</h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- expertise section ends here -->
-
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">PHP</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br>
-                <span class="text">ReactJS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
-            <p class="text-muted">
-              Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
-              aliquid exrea commodi consequatur magni dolores aos qui ratione
-              voluptatem nesciunt.
-            </p>
-            <p class="text-muted">
-              Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
-              consequntar magni dolores.
-            </p>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="Entry Level Web Developer Resume.pdf"
-                download="SampleCV"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill section end here -->
-
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
       </div>
 
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="brand">Brand</button>
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/2048game.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">2048 Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="#" class="link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/currency-converter.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Converter App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Website</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/dictionary.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Dictionary</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/piceditor.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">PicEditor App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">App</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">TicTacToe Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/lang-translator.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Lang Translator</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section ends here -->
+    </div>
+  </section>
 
-    <!-- testimonial section starts  -->
-    <section class="testimonial mt-5 pt-5" id="testimonial">
-      <div class="row justify-content-evenly">
-        <div class="col-md-4 col-10" data-aos="slide-right">
-          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-          <div class="heading">
-            <small>Testimonials</small>
-            <h3>Happy Clients Feedback</h3>
-            <!-- here we will use carousel element from bootstrap -->
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="nextprev-btn rounded-pill prev-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <i class="bi bi-arrow-left-circle-fill prev"></i>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="nextprev-btn rounded-pill next-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <i class="bi bi-arrow-right-circle-fill next"></i>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- testimonial ends here -->
+  <!-- skill section end here -->
 
-    <!-- blog section starts -->
-    <section class="blog mt-5 pb-5" id="blog">
-      <div class="heading text-center pt-5">
-        <small>Latest News</small>
-        <h3>Blog & Articles</h3>
-      </div>
-      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
-        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+  <!-- portfolio section starts here -->
+  <section class="portfolio" id="portfolio">
+    <div class="heading text-center pt-5">
+      <small>Creative Work</small>
+      <h3>Check My Portfolio</h3>
+    </div>
+
+    <div id="myBtnContainer" class="text-center mt-4">
+      <!-- here we will create custom attribute using data- for filtering -->
+      <button class="filter-item" data-filter="all">All</button>
+      <button class="filter-item" data-filter="game">Game</button>
+      <button class="filter-item" data-filter="webapp">Web App</button>
+      <button class="filter-item" data-filter="machine_learning">Machine Learning</button>
+
+    </div>
+    <!-- bookstore -->
+    <div class="portfolio-body">
+      <div class="row justify-content-evenly px-4">
+        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
           <div class="card">
-            <img
-              src="images/2048game.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-          <div class="card">
-            <img
-              src="images/currency-converter.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-          <div class="card">
-            <img
-              src="images/dictionary.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!-- here we will make modals if Read more link is clicked the modal will popup -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/2048game.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/currency-converter.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/dictionary.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- blog section ends here -->
+            <img src="images/Blue and silver inventory system (1).jpeg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Bookstore Reservation System</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span>
+              <span class="badge bg-secondary badge-pill">ASP.NET</span>
+              <span class="badge bg-secondary badge-pill">MSSQL</span>
+              <span class="badge bg-secondary badge-pill mb-2">AZURE</span>
+              <br />
 
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>121 King Street Melbourne, 3000, Australia</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>+91 9527818693</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>codewithpawan@gmail.com</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p>codingpawan.com</p>
+              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalBookstore">
+                Read More
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+        <!-- batuhan  -->
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/batuhan (1).png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Batuhan</h4>
+              <span class="badge bg-secondary badge-pill">C#</span>
+              <span class="badge bg-secondary badge-pill">Unity</span>
+              <br />
+              <!-- Batuhan Link -->
+              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalBatuhan">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- naruto fall -->
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/batuhan 2.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Naruto Fall</h4>
+              <span class="badge bg-secondary badge-pill">JAVA</span>
+              <br />
+              <!-- Naruto Fall Link -->
+              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalNaruto">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-evenly mt-4 px-4">
+        <div class="post col-md-4 machine_learning col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/face detection.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Face recognition</h4>
+              <span class="badge bg-secondary badge-pill">Python</span>
+              <span class="badge bg-secondary badge-pill">OpenCV</span>
+              <span class="badge bg-secondary badge-pill">Dlib</span>
+              <span class="badge bg-secondary badge-pill">face_recognition</span>
+              <span class="badge bg-secondary badge-pill mb-2">Machine Learning</span><br />
+
+              <!-- Face Recognition Link -->
+              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalFaceRecognition">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- portfolio section ends here -->
+
+
+
+
+
+
+  <!-- contact section starts -->
+  <section class="contact py-5" id="contact">
+    <div class="heading text-center">
+      <small>Get in Touch</small>
+      <h3>Any Questions? Feel Free to Contact</h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>BLK 31 lot 5 and 6 Palo Alto Highland 2 Calamba City Laguna</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>+63 9940401157</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-send-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>giananmarcoallen@gmail.com</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-linkedin" style="font-size: 1.5rem; color: #ffc107;"></i>
+          </div>
+          <div class="col-11">
+            <a href="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/">
+              <p>Marco Allen A. Gianan</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- modify this form HTML and place wherever you want your form -->
+
+      <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+        <form action="https://formspree.io/f/mldnwqyg" method="POST">
           <div class="contact-form">
+            <!-- Name -->
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
+              <input type="text" class="form-control" name="name" placeholder="Name" required />
             </div>
+
+            <!-- Email -->
             <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="E-mail"
-              />
+              <input type="email" class="form-control" name="email" placeholder="E-mail" required />
             </div>
+
+            <!-- Mobile -->
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Mobile No."
-              />
+              <input type="text" class="form-control" name="mobile" placeholder="Mobile No." />
             </div>
+
+            <!-- Message -->
             <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                placeholder="Message"
-                rows="5"
-              ></textarea>
+              <textarea class="form-control" name="message" placeholder="Message" rows="5" required></textarea>
             </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+
+            <!-- Submit -->
+            <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               Submit
             </button>
           </div>
-        </div>
+        </form>
+
       </div>
-    </section>
-    <!-- contact section ends here -->
+    </div>
+  </section>
+  <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
+  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#home">Home</a>
-        <div class="vr"></div>
-        <a href="#about">About</a>
-        <div class="vr"></div>
-        <a href="#service">Service</a>
-        <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
-        <div class="vr"></div>
-        <a href="#blog">Blog</a>
-        <div class="vr"></div>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill dribble">
-          <i class="bi bi-dribbble"></i>
-        </button>
-        <button href="" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
-        </button>
-        <button href="" class="rounded-pill behance">
-          <i class="bi bi-behance"></i>
-        </button>
-      </div>
-      <hr class="text-muted my-4" />
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#about">About</a>
+      <div class="vr"></div>
 
-      <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
-    </footer>
-    <!-- footer section ends here -->
 
-      <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+      <a href="#portfolio">Portfolio</a>
+      <div class="vr"></div>
 
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-        duration: 1000,
-        offset: 50,
-      });
-    </script>
-    <!-- custom js file linking -->
-    <script src="js/script.js"></script>
-    
-  </body>
+
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-links mt-5" data-aos="fade-up">
+      <button href="" class="rounded-pill dribble">
+        <i class="bi bi-dribbble"></i>
+      </button>
+      <button href="" class="rounded-pill whatsapp">
+        <i class="bi bi-whatsapp"></i>
+      </button>
+      <button href="" class="rounded-pill behance">
+        <i class="bi bi-behance"></i>
+      </button>
+    </div>
+    <hr class="text-muted my-4" />
+
+    <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <!-- custom js file linking -->
+  <script src="js/script.js"></script>
+
+</body>
+
 </html>

@@ -1,86 +1,160 @@
 // htmlcss progress circular bar 
-let htmlProgress = document.querySelector(".html-css"),
+// ======= HTML =======
+let htmlProgress = document.querySelector(".html"),
   htmlValue = document.querySelector(".html-progress");
 
 let htmlStartValue = 0,
   htmlEndValue = 90,
-  htmlspeed = 30;
+  htmlSpeed = 30;
 
-let progresshtml = setInterval(() => {
+let progressHtml = setInterval(() => {
   htmlStartValue++;
-
   htmlValue.textContent = `${htmlStartValue}%`;
-  htmlProgress.style.background = `conic-gradient(#fca61f ${
-    htmlStartValue * 3.6
-  }deg, #ededed 0deg)`;
+  htmlProgress.style.background = `conic-gradient(#fca61f ${htmlStartValue * 3.6}deg, #ededed 0deg)`;
+  if (htmlStartValue === htmlEndValue) clearInterval(progressHtml);
+}, htmlSpeed);
 
-  if (htmlStartValue == htmlEndValue) {
-    clearInterval(progresshtml);
-  }
-}, htmlspeed);
 
-// javasript progress circular bar 
-let javascriptProgress = document.querySelector(".javascript"),
-  javascriptValue = document.querySelector(".javascript-progress");
+// ======= JavaScript =======
+let jsProgress = document.querySelector(".javascript"),
+  jsValue = document.querySelector(".javascript-progress");
 
-let javascriptStartValue = 0,
-  javascriptEndValue = 75,
-  jsspeed = 30;
+let jsStartValue = 0,
+  jsEndValue = 75,
+  jsSpeed = 30;
 
-let progressjs = setInterval(() => {
-  javascriptStartValue++;
+let progressJs = setInterval(() => {
+  jsStartValue++;
+  jsValue.textContent = `${jsStartValue}%`;
+  jsProgress.style.background = `conic-gradient(#7d2ae8 ${jsStartValue * 3.6}deg, #ededed 0deg)`;
+  if (jsStartValue === jsEndValue) clearInterval(progressJs);
+}, jsSpeed);
 
-  javascriptValue.textContent = `${javascriptStartValue}%`;
-  javascriptProgress.style.background = `conic-gradient(#7d2ae8 ${
-    javascriptStartValue * 3.6
-  }deg, #ededed 0deg)`;
 
-  if (javascriptStartValue == javascriptEndValue) {
-    clearInterval(progressjs);
-  }
-}, jsspeed);
+// ======= Python =======
+let pythonProgress = document.querySelector(".python"),
+  pythonValue = document.querySelector(".python-progress");
 
-// php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
+let pythonStartValue = 0,
+  pythonEndValue = 85,
+  pythonSpeed = 30;
 
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
+let progressPython = setInterval(() => {
+  pythonStartValue++;
+  pythonValue.textContent = `${pythonStartValue}%`;
+  pythonProgress.style.background = `conic-gradient(#306998 ${pythonStartValue * 3.6}deg, #ededed 0deg)`;
+  if (pythonStartValue === pythonEndValue) clearInterval(progressPython);
+}, pythonSpeed);
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
-  }deg, #ededed 0deg)`;
+// ======= Django =======
+let djangoProgress = document.querySelector(".django"),
+  djangoValue = document.querySelector(".django-progress");
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
-  }
-}, phpspeed);
+let djangoStartValue = 0,
+  djangoEndValue = 80,
+  djangoSpeed = 30;
 
-// reactjs progress circular bar 
-let reactProgress = document.querySelector(".reactjs"),
-  reactValue = document.querySelector(".reactjs-progress");
+let progressDjango = setInterval(() => {
+  djangoStartValue++;
+  djangoValue.textContent = `${djangoStartValue}%`;
+  djangoProgress.style.background = `conic-gradient(#092e20 ${djangoStartValue * 3.6}deg, #ededed 0deg)`;
+  if (djangoStartValue === djangoEndValue) clearInterval(progressDjango);
+}, djangoSpeed);
 
-let reactStartValue = 0,
-  reactEndValue = 30,
-  rjsspeed = 30;
 
-let progressreact = setInterval(() => {
-  reactStartValue++;
+// ======= Flask =======
+let flaskProgress = document.querySelector(".flask"),
+  flaskValue = document.querySelector(".flask-progress");
 
-  reactValue.textContent = `${reactStartValue}%`;
-  reactProgress.style.background = `conic-gradient(#3f396d ${
-    reactStartValue * 3.6
-  }deg, #ededed 0deg)`;
+let flaskStartValue = 0,
+  flaskEndValue = 70,
+  flaskSpeed = 30;
 
-  if (reactStartValue == reactEndValue) {
-    clearInterval(progressreact);
-  }
-}, rjsspeed);
+let progressFlask = setInterval(() => {
+  flaskStartValue++;
+  flaskValue.textContent = `${flaskStartValue}%`;
+  flaskProgress.style.background = `conic-gradient(#000000 ${flaskStartValue * 3.6}deg, #ededed 0deg)`;
+  if (flaskStartValue === flaskEndValue) clearInterval(progressFlask);
+}, flaskSpeed);
+
+
+// ======= Bootstrap =======
+let bootstrapProgress = document.querySelector(".bootstrap"),
+  bootstrapValue = document.querySelector(".bootstrap-progress");
+
+let bootstrapStartValue = 0,
+  bootstrapEndValue = 85,
+  bootstrapSpeed = 30;
+
+let progressBootstrap = setInterval(() => {
+  bootstrapStartValue++;
+  bootstrapValue.textContent = `${bootstrapStartValue}%`;
+  bootstrapProgress.style.background = `conic-gradient(#563d7c ${bootstrapStartValue * 3.6}deg, #ededed 0deg)`;
+  if (bootstrapStartValue === bootstrapEndValue) clearInterval(progressBootstrap);
+}, bootstrapSpeed);
+
+
+// ======= C# =======
+let csharpProgress = document.querySelector(".csharp"),
+  csharpValue = document.querySelector(".csharp-progress");
+
+let csharpStartValue = 0,
+  csharpEndValue = 75,
+  csharpSpeed = 30;
+
+let progressCsharp = setInterval(() => {
+  csharpStartValue++;
+  csharpValue.textContent = `${csharpStartValue}%`;
+  csharpProgress.style.background = `conic-gradient(#178600 ${csharpStartValue * 3.6}deg, #ededed 0deg)`;
+  if (csharpStartValue === csharpEndValue) clearInterval(progressCsharp);
+}, csharpSpeed);
+
+
+// ======= ASP.NET =======
+let aspnetProgress = document.querySelector(".aspnet"),
+  aspnetValue = document.querySelector(".aspnet-progress");
+
+let aspnetStartValue = 0,
+  aspnetEndValue = 80,
+  aspnetSpeed = 30;
+
+let progressAspnet = setInterval(() => {
+  aspnetStartValue++;
+  aspnetValue.textContent = `${aspnetStartValue}%`;
+  aspnetProgress.style.background = `conic-gradient(#512bd4 ${aspnetStartValue * 3.6}deg, #ededed 0deg)`;
+  if (aspnetStartValue === aspnetEndValue) clearInterval(progressAspnet);
+}, aspnetSpeed);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // filter using javascript
@@ -102,20 +176,20 @@ $(document).ready(function () {
 
 
 // javascript for sticky navbar even if u scroll the navbar will be fixed
-document.addEventListener("DOMContentLoaded", function(){
-  window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
-        document.getElementById('navbar-top').classList.add('fixed-top');
-        // add padding top to show content behind navbar
-        navbar_height = document.querySelector('.navbar').offsetHeight;
-        document.body.style.paddingTop = navbar_height + 'px';
-      } else {
-        document.getElementById('navbar-top').classList.remove('fixed-top');
-         // remove padding top from body
-        document.body.style.paddingTop = '0';
-      } 
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {
+      document.getElementById('navbar-top').classList.add('fixed-top');
+      // add padding top to show content behind navbar
+      navbar_height = document.querySelector('.navbar').offsetHeight;
+      document.body.style.paddingTop = navbar_height + 'px';
+    } else {
+      document.getElementById('navbar-top').classList.remove('fixed-top');
+      // remove padding top from body
+      document.body.style.paddingTop = '0';
+    }
   });
-}); 
+});
 
 
 // adding funtionality to back to top button 
@@ -138,7 +212,7 @@ function scrollFunction() {
   }
 }
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click",function(){
+mybutton.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
