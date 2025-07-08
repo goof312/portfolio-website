@@ -41,6 +41,22 @@ body {
     left: 0;
 }
 
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #3f396d !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+
+
+
 /* styling contact btn  */
 .c-btn {
     border: none;
