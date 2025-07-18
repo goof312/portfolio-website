@@ -19,6 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
 
 
   <!-- bootstrap icon cdn link  -->
@@ -85,6 +87,7 @@
       </div>
     </div>
   </div>
+  
 
 
 
@@ -256,252 +259,244 @@
   <!-- navbar starts -->
   <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
     <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <a class="navbar-brand fw-bold fs-2 text-primary d-flex align-items-center" href="#">
+  <a class="navbar-brand fw-bold fs-2 text-primary d-flex align-items-center" href="#">
+  <a class="navbar-brand fw-bold fs-2 text-primary d-flex align-items-center" href="#">
+  <img src="images/Marco photo (1).JPG" alt="Marco Allen Gianan" class="rounded-circle me-2" style="height: 40px; width: 40px; object-fit: cover;">
+  
+</a>
+</a>
+</a>
+<button id="theme-toggle" class="btn btn-outline-dark ms-3 rounded-circle d-flex align-items-center justify-content-center" style="width:44px;height:44px;" title="Toggle dark mode">
+  <i class="bi bi-moon-stars-fill" id="theme-icon" style="font-size:1.5rem;"></i>
+</button>
       <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <i class="bi bi-menu-button-fill"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
           <li class="nav-item">
-            <a class="nav-link"  aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#service">Skill</a>
+            <a class="nav-link" href="#service">Skill</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
 
 
         </ul>
       </div>
-      <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" onclick="window.location.href='#contact-form'">Contact</button>
+      <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+        onclick="window.location.href='#contact-form'">Contact</button>
     </div>
   </nav>
   <!-- navbar ends here -->
 
   <!-- home section starts  -->
-  <section class="home pt-5 pb-5" id="home">
-    <div class="row justify-content-evenly align-middle">
-      <!-- here data-aos is used for adding aos animation  -->
-      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-        <h2 style="color: #3f396d">
-          Hello! I Am <br /><span class="c-orange">Marco Allen A Gianan</span>
-        </h2>
-        <p class="text-muted">
-          I'm a Full-Stack Web Developer and a recent graduate with a strong foundation in building fully responsive
-          websites and developing backend functionalities.
-        </p>
-        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-          Hire Me
-        </button>
-        <a href="" class="link ms-4 d-none">See My Work</a>
+  
+  <section class="home py-5" id="home">
+  <div class="container">
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+        <h1 class="display-5 fw-bold">Hi, I'm <span class="text-primary">Marco Allen A Gianan</span></h1>
+        <p class="lead text-muted">Software Engineer | Full-Stack Developer | Problem Solver</p>
+        <p>I build scalable web applications and engineer solutions using modern technologies.</p>
+        <div class="mt-4">
+          <a href="https://github.com/your-github" class="btn btn-dark me-2 mb-2"><i class="bi bi-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/" class="btn btn-primary mb-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </div>
       </div>
-      <div class="col-10 col-md-4 d-none d-md-block">
-        <img src="images\Marco with suit.png" class="img-fluid" alt="" />
+      <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left">
+        <div class="profile-img-wrapper position-relative">
+          <img src="images/Marco with suit.png" alt="Marco Allen Gianan" class="img-fluid rounded-circle shadow-lg" style="max-width: 250px; border: 5px solid #fff;">
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
   <!-- home section ends here -->
 
   <!-- expertise section starts -->
-  <section class="expertise mt-5" id="service">
-    <div class="heading text-center">
-      <small>My Expertise</small>
-      <!-- <h3>What I’m Passionate About</h3> -->
-    </div>
+  <section class="expertise mt-5" id="service" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <!-- <h3>What I’m Passionate About</h3> -->
+      </div>
 
-    <div class="row justify-content-evenly mt-5">
 
-      <!-- Full-Stack Development -->
-      <div class="col-10 col-md-4" data-aos="fade-up">
-        <div class="service-card">
-          <div class="img text-center">
-            <div class="img expertise-icon-wrapper">
-              <img src="images/full stack.png" class="expertise-icon" alt="Full Stack" />
+      <div class="row justify-content-evenly mt-5">
+
+        <!-- Full-Stack Development -->
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img text-center">
+              <div class="img expertise-icon-wrapper">
+                <img src="images/full stack.png" class="expertise-icon" alt="Full Stack" />
+              </div>
+            </div>
+            <div class="content mt-3">
+              <h4>Full-Stack Development</h4>
+              <p class="text-muted">
+                I enjoy building fully responsive web applications using technologies like
+                HTML, CSS, JavaScript, Django, and ASP.NET — covering both frontend and backend.
+              </p>
+              
             </div>
           </div>
-          <div class="content mt-3">
-            <h4>Full-Stack Development</h4>
-            <p class="text-muted">
-              I enjoy building fully responsive web applications using technologies like
-              HTML, CSS, JavaScript, Django, and ASP.NET — covering both frontend and backend.
-            </p>
-            <a href="#projects" class="link">Read More</a>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img text-center">
+              <div class="img expertise-icon-wrapper">
+                <img src="images/machine learning.png" class="expertise-icon" alt="Machine Learning" />
+              </div>
+            </div>
+            <div class="content mt-3">
+              <h4>Machine Learning</h4>
+              <p class="text-muted">
+                I’ve worked on academic and personal projects involving machine learning, using Python, scikit-learn,
+                and
+                TensorFlow to develop and integrate intelligent models into real-world applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img text-center">
+              <div class="expertise-icon-wrapper">
+                <img src="images/Data-analytics-.png" class="expertise-icon" alt="Data Analytics" />
+              </div>
+            </div>
+            <div class="content mt-3">
+              <h4>Data Analytics</h4>
+              <p class="text-muted">
+                I analyze and visualize data using tools like Pandas, Matplotlib, SQL, and Power BI. I love turning raw
+                data into meaningful insights through charts and reports.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Machine Learning -->
-      <div class="col-10 col-md-4" data-aos="fade-up">
-        <div class="service-card">
-          <div class="img text-center">
-            <div class="img expertise-icon-wrapper">
-              <img src="images/machine learning.png" class="expertise-icon" alt="Machine Learning" />
-            </div>
-          </div>
-          <div class="content mt-3">
-            <h4>Machine Learning</h4>
-            <p class="text-muted">
-              I’ve worked on academic and personal projects involving machine learning, using Python, scikit-learn, and
-              TensorFlow to develop and integrate intelligent models into real-world applications.
-            </p>
-            <a href="#projects" class="link">Read More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Analytics -->
-      <div class="col-10 col-md-4" data-aos="fade-up">
-        <div class="service-card">
-          <div class="img text-center">
-            <div class="expertise-icon-wrapper">
-              <img src="images/Data-analytics-.png" class="expertise-icon" alt="Data Analytics" />
-            </div>
-          </div>
-          <div class="content mt-3">
-            <h4>Data Analytics</h4>
-            <p class="text-muted">
-              I analyze and visualize data using tools like Pandas, Matplotlib, SQL, and Power BI. I love turning raw
-              data into meaningful insights through charts and reports.
-            </p>
-            <a href="#projects" class="link">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     </div>
   </section>
-
-
   <!-- expertise section ends here -->
 
 
   <!-- skill section starts -->
-  <section class="skill mt-5 py-5" id="about">
-    <div class="row justify-content-evenly">
-
-      <!-- Left Column: Skill Progress -->
-      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-
-        <div class="row justify-content-evenly">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress html">
-                <span class="progress-value html-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">HTML</span>
+  <section class="skill mt-5 py-5" id="about" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="heading text-center mb-5">
+        <small>My Skills</small>
+        <h3>Passionate About Building Real-World Solutions</h3>
+        <p class="text-muted">
+          As a Computer Science student, I’ve explored both frontend and backend technologies—ranging from Django,
+          ASP.NET, and Flask to JavaScript and Bootstrap. I enjoy learning how different technologies work together to build full-stack applications, and I continue to grow by building projects that solve real-world problems.
+        </p>
+        <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume" class="btn c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+          Download Resume
+        </a>
+      </div>
+      <div class="row justify-content-center">
+        <!-- HTML -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress html mx-auto mb-2" style="position:relative;">
+              <span class="progress-value html-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">90%</span>
             </div>
+          
           </div>
-          <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress javascript">
-                <span class="progress-value javascript-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">JavaScript</span>
+          
+        </div>
+        <!-- JavaScript -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress javascript mx-auto mb-2" style="position:relative;">
+              <span class="progress-value javascript-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">85%</span>
             </div>
+            <i class="bi bi-filetype-js mt-3" style="font-size:2.5rem;color:#f7df1e;"></i>
+            <h5 class="mt-3">JavaScript</h5>
           </div>
         </div>
-
-        <div class="row justify-content-evenly mt-4">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress python">
-                <span class="progress-value python-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">Python</span>
+        <!-- Python -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress python mx-auto mb-2" style="position:relative;">
+              <span class="progress-value python-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">80%</span>
             </div>
-          </div>
-          <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress django">
-                <span class="progress-value django-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">Django</span>
-            </div>
+            <i class="bi bi-filetype-py mt-3" style="font-size:2.5rem;color:#3776ab;"></i>
+            <h5 class="mt-3">Python</h5>
           </div>
         </div>
-
-        <div class="row justify-content-evenly mt-4">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress flask">
-                <span class="progress-value flask-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">Flask</span>
+        <!-- Django -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress django mx-auto mb-2" style="position:relative;">
+              <span class="progress-value django-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">75%</span>
             </div>
-          </div>
-          <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress bootstrap">
-                <span class="progress-value bootstrap-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">Bootstrap</span>
-            </div>
+            <i class="bi bi-filetype-django mt-3" style="font-size:2.5rem;color:#092e20;"></i>
+            <h5 class="mt-3">Django</h5>
           </div>
         </div>
-
-        <div class="row justify-content-evenly mt-4">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress csharp">
-                <span class="progress-value csharp-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">C#</span>
+        <!-- Flask -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress flask mx-auto mb-2" style="position:relative;">
+              <span class="progress-value flask-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">70%</span>
             </div>
+            <i class="bi bi-cup-hot mt-3" style="font-size:2.5rem;color:#000;"></i>
+            <h5 class="mt-3">Flask</h5>
           </div>
-          <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress aspnet">
-                <span class="progress-value aspnet-progress">0%</span>
-              </div>
-              <br />
-              <span class="text">ASP.NET</span>
+        </div>
+        <!-- Bootstrap -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress bootstrap mx-auto mb-2" style="position:relative;">
+              <span class="progress-value bootstrap-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">85%</span>
             </div>
+            <i class="bi bi-bootstrap mt-3" style="font-size:2.5rem;color:#7952b3;"></i>
+            <h5 class="mt-3">Bootstrap</h5>
+          </div>
+        </div>
+        <!-- C# -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress csharp mx-auto mb-2" style="position:relative;">
+              <span class="progress-value csharp-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">80%</span>
+            </div>
+            <i class="bi bi-filetype-cs mt-3" style="font-size:2.5rem;color:#239120;"></i>
+            <h5 class="mt-3">C#</h5>
+          </div>
+        </div>
+        <!-- ASP.NET -->
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card text-center shadow-sm h-100 py-4">
+            <div class="circular-progress aspnet mx-auto mb-2" style="position:relative;">
+              <span class="progress-value aspnet-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">75%</span>
+            </div>
+            <i class="bi bi-cloud mt-3" style="font-size:2.5rem;color:#512bd4;"></i>
+            <h5 class="mt-3">ASP.NET</h5>
           </div>
         </div>
       </div>
-
-      <!-- Right Column: Skill Summary -->
-      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-        <div class="heading mt-5 mt-md-3">
-          <small>My Skills</small>
-          <h3>Passionate About Building Real-World Solutions</h3>
-          <p class="text-muted">
-            As a Computer Science student, I’ve explored both frontend and backend technologies—ranging from Django,
-            ASP.NET, and Flask to JavaScript and Bootstrap.
-          </p>
-          <p class="text-muted">
-            I enjoy learning how different technologies work together to build full-stack applications, and I continue
-            to grow by building projects that solve real-world problems.
-          </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume"
-              style="text-decoration: none; color: #fff;">
-              Download Resume
-            </a>
-          </button>
-        </div>
-      </div>
-
     </div>
   </section>
-
   <!-- skill section end here -->
 
   <!-- portfolio section starts here -->
-  <section class="portfolio" id="portfolio">
+   <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
     <div class="heading text-center pt-5">
       <small>Creative Work</small>
       <h3>Check My Portfolio</h3>
@@ -593,6 +588,7 @@
     </div>
     </div>
   </section>
+
   <!-- portfolio section ends here -->
 
 
@@ -601,7 +597,7 @@
 
 
   <!-- contact section starts -->
-  <section class="contact py-5" id="contact">
+  <section class="contact py-5" id="contact" data-aos="fade-up" data-aos-duration="1000">
     <div class="heading text-center">
       <small>Get in Touch</small>
       <h3>Any Questions? Feel Free to Contact</h3>

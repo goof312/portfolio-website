@@ -1,9 +1,20 @@
-/* appling google font over the website  */
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+:root[data-theme='dark'] {
+  --bg: #1e1e2f;
+  --text: #e0e0e0;
+  --primary: #b71c1c;
+  --secondary: #37474f;
 }
 
+
+/* appling google font over the website  */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    overflow-x:hidden ;
+}
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+}
 /* styling menu icon */
 .nav-menu {
     border: none;
@@ -50,6 +61,9 @@ body {
 .navbar-nav .nav-link.active::after {
   width: 100%;
   left: 0;
+}
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -142,10 +156,7 @@ body {
     transform-origin: bottom left;
 }
 
-/* adding animation to home section image  */
-.home img {
-    animation: floatimg 4s ease-in-out infinite;
-}
+
 
 @keyframes floatimg {
     0% {
@@ -494,4 +505,54 @@ footer .link-group a:hover {
     background-color: #fca61f;
     color: #fff;
     animation: pulse 3s infinite;
+}
+
+img, .card {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b;
+  color: #e4e6eb;
+}
+.navbar.dark-mode, footer.dark-mode {
+  background: #23272b !important;
+  color: #e4e6eb !important;
+}
+.card.dark-mode {
+  background: #23272b;
+  color: #e4e6eb;
+}
+/* Add to your css/style.css */
+.skill-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(63,57,109,0.12);
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-primary, .btn-dark {
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
 }
