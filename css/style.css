@@ -1,558 +1,956 @@
-:root[data-theme='dark'] {
-  --bg: #1e1e2f;
-  --text: #e0e0e0;
-  --primary: #b71c1c;
-  --secondary: #37474f;
-}
-
-
-/* appling google font over the website  */
-body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    overflow-x:hidden ;
-}
-h1, h2, h3 {
-  font-family: 'Cinzel', serif;
-}
-/* styling menu icon */
-.nav-menu {
-    border: none;
-    background-color: #fff;
-    font-size: 1.5rem;
-    color: #fca61f;
-}
-
-/* styling navbar links  */
-.navbar-nav a {
-    color: black;
-    position: relative;
-}
-
-.navbar-nav a:hover {
-    color: #fca61f;
-}
-
-.navbar-nav a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    top: 35px;
-    position: absolute;
-    background: #fca61f;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.navbar-nav a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-
-.navbar-nav .nav-link.active {
-  font-weight: bold;
-  color: #3f396d !important;
-}
-
-.navbar-nav .nav-link.active::after {
-  width: 100%;
-  left: 0;
-}
-.navbar {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-
-
-
-
-
-/* styling contact btn  */
-.c-btn {
-    border: none;
-    background: #fca61f;
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-/* styling home section starts */
-.home {
-    background: linear-gradient(33deg, rgba(242, 242, 255, 1) 0%, rgba(235, 249, 255, 1) 100%);
-    padding: 30px 0px 10px 0px;
-}
-
-.expertise-icon-wrapper {
-    height: 300px;
-    /* Same height for all icons */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.expertise-icon {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.home h2 {
-    font-size: 3rem;
-    line-height: 4rem;
-}
-
-.c-orange {
-    color: #6f34fe;
-    font-weight: 700;
-    font-size: 4rem;
-}
-
-.home p {
-    width: fit-content;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-}
-
-.h-btn:hover {
-    background: #6f34fe;
-    color: #fff;
-    transform: translateY(-20px);
-    transition-duration: 1s;
-}
-
-.btn-link {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #fca61f;
-    position: relative;
-}
-
-
-.link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    top: 20px;
-    background-color: #6f34fe;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.link:hover {
-    color: #6f34fe;
-}
-
-.link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
-
-@keyframes floatimg {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-24px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-/* expertise section starts */
-.heading small {
-    color: #6f34fe;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.heading h3 {
-    margin-top: 0.5rem;
-    color: #3f396d;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.expertise h4 {
-    color: #3f396d;
-    font-weight: 700;
-}
-
-.expertise a {
-    text-decoration: none;
-    color: #fca61f;
-}
-
-.expertise a:hover {
-    color: #6f34fe;
-}
-
-.expertise .service-card {
-    text-align: center;
-    padding: 15px 15px;
-    border-radius: 0.7rem;
-}
-
-/* skill section starts */
-.skill {
-    background-color: rgb(234, 234, 249);
-}
-
-.progress-card {
-    padding: 12% 10% 10% 15%;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 10%;
-}
-
-.progress-card:hover {
-    transform: scale(1.1, 1.1);
-    transition-duration: 0.6s;
-}
-
-.circular-progress {
-    position: relative;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circular-progress::before {
-    content: "";
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.progress-value {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.html-progress {
-    color: #fca61f;
-}
-
-.javascript-progress {
-    color: #6f34fe;
-}
-
-.php-progress {
-    color: #20c997;
-}
-
-.reactjs-progress {
-    color: #3f396d;
-}
-
-.text {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.heading p {
-    font-size: 1.3rem;
-}
-
-/* portfolio section starts */
-#myBtnContainer {
-    margin-bottom: 45px;
-}
-
-#myBtnContainer button {
-    border: none;
-    color: black;
-    background: transparent;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 25px;
-}
-
-#myBtnContainer button:hover {
-    color: #fca61f;
-}
-
-#myBtnContainer button:focus {
-    outline: none;
-}
-
-.post .content h4 {
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.post .card {
-    border: none;
-}
-
-/* testimonial section starts */
-.testimonial img:hover {
-    transform: scale(1.2, 1.2);
-    transition-duration: 1s;
-}
-
-.testimonial h4 {
-    color: #3f396d;
-}
-
-.testimonial i {
-    font-size: 2.9rem;
-    color: #fca61f;
-
-}
-
-.testimonial .nextprev-btn {
-    border: none;
-    background-color: #fff;
-}
-
-.prev:hover,
-.prev-btn:hover {
-    color: #6f34fe;
-    transform: translateX(-10px);
-    transition-duration: 1s;
-}
-
-.next:hover,
-.next-btn:hover {
-    color: #6f34fe;
-    transform: translateX(10px);
-    transition-duration: 1s;
-}
-
-/* blog section starts */
-.blog {
-    background-color: #f2f2ff;
-}
-
-.blog .blogpost .card {
-    border: none;
-    border-radius: 5%;
-}
-
-.nav-bg {
-    background-color: #fff;
-}
-
-.blog .blogpost small {
-    color: #6f34fe;
-    font-size: 1.1rem;
-}
-
-.blog .blogpost h4,
-.blogpost a {
-    color: #3f396d;
-    font-weight: 700;
-    margin-top: 1rem;
-    text-decoration: none;
-}
-
-.blogpost a:hover {
-    color: #fca61f;
-}
-
-.blog .blogpost .read-more-btn {
-    text-decoration: none;
-    color: #fca61f;
-    font-size: 1.1rem;
-}
-
-.blog .blogpost .read-more-btn:hover {
-    color: #6f34fe;
-}
-
-.card-img-top {
-    height: 250px;
-    object-fit: contain;
-    width: 100%;
-
-    /* Optional: Add a background if image doesn't fill the space */
-}
-
-/* styling modal group  */
-.btn-c {
-    margin-left: 94%;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    margin-top: -3%;
-}
-
-.btn-c i {
-    color: #fca61f;
-}
-
-.modal-body .content span {
-    font-size: 1rem;
-}
-
-.modal-body .content small {
-    font-size: 1rem;
-    color: #6f34fe;
-}
-
-/* contact section starts */
-.contact {
-    background-color: #f3f3f3;
-}
-
-.contact-details i {
-    font-size: 1.5rem;
-    color: #fca61f;
-}
-
-.contact-details p {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-}
-
-.contact-form .form-control:focus {
-    box-shadow: none;
-    border: 1px solid #fca61f;
-}
-
-.contact-form .form-control {
-    padding: 10px 10px;
-    width: 80%;
-}
-
-/* footer section starts */
-footer {
-    background-color: #211e39;
-}
-
-footer .link-group a {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #6c757d;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-}
-
-footer .link-group a:hover {
-    color: #fca61f;
-}
-
-.social-links button {
-    border: none;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    background-color: #fff;
-    padding: 14px 15px 10px 15px;
-}
-
-.social-links .dribble {
-    color: #f33a7e;
-}
-
-.social-links button:hover {
-    color: #fff;
-    transform: translateY(-20px);
-    transition-duration: 1s;
-}
-
-.social-links .dribble:hover {
-    background-color: #f33a7e;
-}
-
-.social-links .whatsapp {
-    color: #25D366;
-}
-
-.social-links .whatsapp:hover {
-    background-color: #25D366;
-}
-
-.social-links .behance {
-    color: #255afc;
-}
-
-.social-links .behance:hover {
-    background-color: #255afc;
-}
-
-/* styling back to top button */
-#btn-back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    display: none;
-    font-size: 1.4rem;
-    background-color: #fca61f;
-    color: #fff;
-    animation: pulse 3s infinite;
-}
-
-img, .card {
-  max-width: 100%;
-  height: auto;
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+/* Dota 2 Inspired Colors */
+:root {
+  --dota-bg: #181818;
+  --dota-gold: #caa552;
+  --dota-brown: #2e1a09;
+  --dota-red: #d32f2f;
+  --dota-green: #4e9a06;
+  --dota-gray: #232323;
+  --dota-text: #e4e6eb;
+  --text-muted: #b0b0b0;
+  --card-bg: #1f1f1f;
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
-/* Dark mode styles */
-body.dark-mode {
-  background: #181a1b;
-  color: #e4e6eb;
-}
-.navbar.dark-mode, footer.dark-mode {
-  background: #23272b !important;
-  color: #e4e6eb !important;
-}
-.card.dark-mode {
-  background: #23272b;
-  color: #e4e6eb;
-}
-/* Add to your css/style.css */
-.skill-card {
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.skill-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(63,57,109,0.12);
+html,
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--dota-bg);
+  color: var(--dota-text);
+  scroll-behavior: smooth;
 }
 
-.card {
+a {
+  text-decoration: none;
+  color: var(--dota-gold);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--dota-red);
+}
+
+
+/* === Layout === */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: var(--dota-gold);
+  position: relative;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--dota-red);
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--dota-gold);
+  transition: width var(--transition-medium);
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+
+/* === Hero Section === */
+.hero {
+  background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg') center/cover no-repeat;
+  padding: 6rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid var(--dota-red);
+}
+
+/* === Section === */
+section {
+  background: var(--dota-gray);
+  border-radius: 12px;
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+  box-shadow: var(--card-shadow);
+}
+
+section h2 {
+  color: var(--dota-gold);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--dota-gold);
+}
+
+/* === Buttons === */
+.cta-button,
+.c-btn,
+.btn-primary {
+  background: var(--dota-gold);
+  color: var(--dota-bg);
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
   border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.cta-button:hover,
+.c-btn:hover,
+.btn-primary:hover {
+  background: var(--dota-red);
+  color: white;
+}
+
+
+
+
+
+
+
+.intro h2 {
+  font-size: 3rem;
+  color: var(--accent);
+}
+
+.intro p {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.cta-button {
+  background: var(--dota-red);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.cta-button:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Dota 2 Navbar */
+.dota2-navbar {
+  background: linear-gradient(90deg, #181818 60%, #2e1a09 100%) !important;
+  border-bottom: 3px solid #caa552;
+  box-shadow: 0 2px 16px #000a;
+}
+
+.dota2-navbar .navbar-brand {
+  color: #caa552 !important;
+  font-family: 'Orbitron', serif;
+  letter-spacing: 2px;
+}
+
+.dota2-navbar .nav-link {
+  color: #caa552 !important;
+  font-family: 'Orbitron', serif;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.dota2-navbar .nav-link.active,
+.dota2-navbar .nav-link:hover {
+  color: #d32f2f !important;
+}
+
+.dota2-navbar .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #caa552;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.dota2-navbar .nav-link:hover::after,
+.dota2-navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/* Sections */
+section {
+  background: var(--dota-gray);
+  border-radius: 12px;
+  margin: 2rem 0;
+  padding: 3rem 0;
+  box-shadow: 0 0 15px rgba(202, 165, 82, 0.08);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--dota-gold);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about p,
+.contact p,
+.projects p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-muted);
+}
+
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-list li {
+  background: #292929;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--dota-red);
+  border-radius: 8px;
+  list-style: none;
+  font-weight: bold;
+  color: var(--text-light);
+  transition: transform 0.3s;
+}
+
+.skill-list li:hover {
+  transform: scale(1.05);
+}
+
+/* Projects */
+.project-item {
+  background: #232323;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  max-width: 700px;
+  transition: transform 0.3s;
+}
+
+.project-item h3 {
+  color: var(--dota-gold);
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid var(--dota-red);
+  color: var(--text-muted);
+  background-color: #101010;
+}
+
+.dota2-footer {
+  background: linear-gradient(90deg, var(--dota-bg) 60%, var(--dota-brown) 100%);
+  border-top: 4px solid var(--dota-gold);
+}
+
+.text-gold {
+  color: var(--dota-gold) !important;
+}
+
+.dota2-link {
+  color: var(--dota-gold);
+  font-weight: bold;
+  font-family: 'Orbitron', serif;
+  margin: 0 10px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.dota2-link:hover {
+  color: var(--dota-red);
+}
+
+.dota2-btn {
+  background: var(--dota-brown);
+  color: var(--dota-gold);
+  border: 2px solid var(--dota-gold);
+  margin: 0 8px;
+  font-size: 1.3rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #000a;
+}
+
+.dota2-btn:hover {
+  background: var(--dota-gold);
+  color: var(--dota-brown);
+  box-shadow: 0 0 16px var(--dota-gold);
+}
+
+/* Section backgrounds */
+section {
+  background: var(--dota-gray);
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 0 15px rgba(202, 165, 82, 0.08);
+}
+
+/* Buttons */
+.c-btn,
+.btn-primary {
+  background: var(--dota-gold);
+  color: #181818;
+  border: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.c-btn:hover,
+.btn-primary:hover {
+  background: var(--dota-red);
+  color: #fff;
+}
+
+/* Skill/Portfolio Cards */
+.card {
+  background: #232323;
+  border: 2px solid var(--dota-gold);
+  border-radius: 1rem;
+  color: var(--dota-gold);
+  box-shadow: 0 2px 12px #000a;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress/Skill Circles */
+.circular-progress {
+  background: conic-gradient(var(--dota-gold) 0 75%, #232323 0 100%);
+}
+
+.circular-progress::before {
+  background: #181818;
+}
+
+/* Portfolio Badges */
+.badge.bg-secondary {
+  background: var(--dota-brown) !important;
+  color: var(--dota-gold) !important;
+  border: 1px solid var(--dota-gold);
+}
+
+/* Section Headings */
+.heading small {
+  color: var(--dota-red);
+  font-family: 'Orbitron', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Home/Profile Image - Modern, Medium Size, Soft Design */
+.profile-img-wrapper img,
+.hero-portrait-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  /* Modern rounded corners */
+  border: none;
+  background: #232323;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), 0 1.5px 8px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
+  z-index: 2;
+  margin: 0 auto;
+  display: block;
+}
+
+.profile-img-wrapper img:hover,
+.hero-portrait-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22), 0 3px 16px rgba(0, 0, 0, 0.13);
+}
+
+/* Optional: Add a subtle Dota 2 background image to .home or .skill */
+.home,
+.skill {
+
+  background-blend-mode: multiply;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--dota-brown);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dota-gold);
+  border-radius: 8px;
+}
+
+/* Hero Avatar Navbar Theme */
+.hero-avatar-navbar .hero-avatar-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.hero-avatar-navbar .hero-avatar-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  background: radial-gradient(circle at 60% 40%, #caa552 0%, #2e1a09 80%, #181818 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow:
+    0 0 32px 8px #caa55266,
+    /* gold glow */
+    0 0 0 8px #181818,
+    /* dark outer ring */
+    0 0 0 16px #2e1a0944;
+  /* faint brown aura */
+  border: 2px solid #caa552;
+}
+
+.hero-avatar-navbar .hero-avatar-img {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #caa552;
+  box-shadow:
+    0 0 16px #caa552,
+    0 0 0 4px #181818;
+  z-index: 2;
+  background: #232323;
+  margin: 5px;
+}
+
+.expertise-icon {
+  background-blend-mode: multiply;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .expertise-icon {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.tech-icon {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .tech-icon {
+  transform: scale(1.1);
+}
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(var(--clr, #007bff) 0%, #eee 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  margin: 0 auto;
+  transition: background 1s ease;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  /* deep black background */
+  border: 2px solid #ffcc00;
+  /* yellowish border */
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  /* red glow */
+}
+
+.skill-card h6 {
+  color: #ff4d4d;
+  /* reddish heading */
+}
+
+.tech-icon {
+  max-width: 50px;
+  height: auto;
+  filter: drop-shadow(0 0 3px #ffcc00);
+  /* slight yellow glow */
+}
+
+.progress-circle {
+  background-color: #2e2e2e;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  line-height: 80px;
+  font-weight: bold;
+  color: #ffcc00;
+  border: 4px solid #ffcc00;
+}
+
+.skill-card {
+  background: linear-gradient(to bottom right, #1c1c1c, #000);
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.1);
+  /* subtle red glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f1f1f1;
+}
+
+.skill-card:hover .ring-progress {
+  stroke: #ff0000;
+  /* animate to red on hover */
+  transition: stroke 0.1s ease-in-out;
+}
+
+.circle-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: #333;
+  stroke-width: 12;
+}
+
+.ring-progress {
+  fill: none;
+  stroke: #ffc107;
+  /* yellow */
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: 339.292;
+  /* 2πr where r = 54 */
+  stroke-dashoffset: 339.292;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffc107;
+  letter-spacing: 1px;
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 4px rgba(255, 0, 0, 0.5));
+  /* red glow */
+}
+
+h6.fw-semibold {
+  color: #f1f1f1;
+  margin-top: 0.5rem;
+}
+
+/* === Portfolio Filter Buttons === */
+#myBtnContainer .filter-item {
+  background: var(--card-bg);
+  border: 1px solid var(--dota-gold);
+  color: var(--dota-gold);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#myBtnContainer .filter-item:hover,
+#myBtnContainer .filter-item.active {
+  background: var(--dota-gold);
+  color: var(--dota-bg);
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable-card:hover {
+  transform: scale(1.02);
+}
+
+
+.portfolio .card {
+  background-color: #2d2d2d;
+  /* Slightly lighter than #232323 */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  /* Stronger shadow for dark bg */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #333;
+
+  /* Light text for readability */
+}
+
+.portfolio .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+
+.portfolio .badge {
+  font-size: 0.85rem;
+  background-color: #444 !important;
+  /* Muted but readable */
+  color: #fff;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-portrait-img {
+    max-width: 200px;
+    margin-bottom: 1e;
+  }
+
+  .card-img-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-container {
+    height: 140px;
+  }
+}
+
+
+
+
+
+
+@keyframes glow {
+  50% {
+    box-shadow: 0 0 40px hsl(12, 100%, 60%);
+  }
+}
+
+
+[anim="glow"]:not(.toggled) {
+  animation: glow var(--ease-elastic-in-1) 600ms infinite alternate;
+}
+
+
+
+
+
+:root {
+  --black: hsl(0, 0%, 13%);
+  --dark: hsl(12, 32%, 2%);
+  --gray: hsl(0, 0%, 70%);
+  --white: hsl(0, 0%, 96%);
+  --red: hsl(12, 90%, 63%);
+  --red-shadow: hsl(12, 100%, 60%);
+  --red-sheen: linear-gradient(to bottom,
+      hsl(12, 90%, 43%),
+      hsla(12, 40%, 70%, 0.5) 50%,
+      hsl(12, 93%, 23%));
+}
+
+
+
+
+button {
+  all: unset;
+  background-color: var(--black);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--red);
+  box-shadow: 0 0 4px var(--red-shadow);
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ripple click effect on card */
+.clickable-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-card:active {
+  transform: scale(0.97);
+}
+
+.clickable-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.clickable-card .ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 600ms linear;
+  background-color: rgba(0, 123, 255, 0.3);
+  /* Bootstrap primary */
+  pointer-events: none;
+}
+
+
+/* Add to your custom stylesheet or inside a <style> tag */
+
+.modal.fade .modal-dialog {
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  transform: translateY(30px) scale(0.95);
+  opacity: 0;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.modal-backdrop.show {
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* dark translucent */
+}
+
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Modal Theme Styling */
+.custom-dark-modal .modal-content {
+  background-color: var(--card-bg);
+  color: var(--dota-text);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  animation: fadeInUp 0.4s var(--ease-in-out) forwards;
+}
+
+.custom-dark-modal .modal-header,
+.custom-dark-modal .modal-footer {
+  background-color: var(--dota-gray);
+}
+
+.custom-dark-modal .modal-title {
+  color: var(--dota-gold);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.custom-dark-modal .modal-body h6 {
+  color: var(--dota-green);
+  margin-top: 1rem;
+}
+
+.custom-dark-modal .modal-body ul {
+  list-style-type: '→ ';
+  padding-left: 1.2rem;
+}
+
+.custom-dark-modal a {
+  color: var(--dota-gold);
+  text-decoration: underline;
+}
+
+.custom-dark-modal a:hover {
+  color: var(--dota-red);
+}
+
+/* Buttons */
+.custom-btn {
+  background-color: var(--dota-gold);
+  color: #000;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: var(--dota-red);
+  color: #fff;
+}
+
+/* Modal Open Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Spotlight Card Effects */
+.spotlight-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
 }
 
-
-.btn-primary, .btn-dark {
-  padding: 0.6rem 1.4rem;
-  border-radius: 30px;
-  font-weight: 600;
+/* Glowing Number */
+.glow-text {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
 }
 
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-top: 80px;
+  padding-left: 0;
+}
 
-h1, h2, h3 {
-  font-family: 'Cinzel', serif;
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--dota-gold);
+  transform: translateX(-50%);
+}
+
+.timeline-event {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.timeline-event .content {
+  background: #2b2b2b;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-event.left {
+  left: 0;
+  text-align: right;
+  padding-right: 60px;
+}
+
+.timeline-event.right {
+  left: 50%;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: var(--dota-gold);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-event.left::before {
+  right: -10px;
+}
+
+.timeline-event.right::before {
+  left: -10px;
 }

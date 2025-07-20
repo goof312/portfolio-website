@@ -10,6 +10,8 @@
   <!-- bootstrap css cdn link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
   <!-- custom css file -->
   <link rel="stylesheet" href="css/style.css" />
@@ -19,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
 
 
@@ -37,23 +39,23 @@
 <body>
   <!-- hidden pop up -->
 
-  <!-- Bookstore Reservation Modal -->
-  <div class="modal fade" id="modalBookstore" tabindex="-1" aria-labelledby="modalBookstoreLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-lg for wider content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalBookstoreLabel">Bookstore Reservation System</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
 
+  <!-- Bookstore Reservation Modal -->
+  <div class="modal fade custom-dark-modal" id="modalBookstore" tabindex="-1" aria-labelledby="modalBookstoreLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="modalBookstoreLabel">📚 Bookstore Reservation System</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
           <p>
             This is a school-based Bookstore Reservation System that enables students to reserve items in advance
             and allows administrators to efficiently manage inventory and transactions. The system is tailored to
-            support
-            walk-in payment schemes with a clear separation between online reserved stock and in-store inventory.
+            support walk-in payment schemes with a clear separation between online reserved stock and in-store
+            inventory.
           </p>
-
           <h6>📌 Key Features:</h6>
           <ul>
             <li>✅ Student item reservation with quantity tracking</li>
@@ -78,34 +80,30 @@
           </ul>
         </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="https://github.com/your-username/bookstore-reservation" target="_blank" class="btn btn-primary">
-            View on GitHub
-          </a>
-        </div>
       </div>
     </div>
   </div>
-  
+
+
+
 
 
 
   <!-- Batuhan Modal -->
-  <div class="modal fade" id="modalBatuhan" tabindex="-1" aria-labelledby="modalBatuhanLabel" aria-hidden="true">
+  <div class="modal fade custom-dark-modal" id="modalBatuhan" tabindex="-1" aria-labelledby="modalBatuhanLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalBatuhanLabel">Batuhan - Two Player Turn-Based Game</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="modalBatuhanLabel">🎯 Batuhan - Two Player Turn-Based Game</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <div class="modal-body">
           <p>
-            <strong>Batuhan</strong> is a fun two-player turn-based game developed using the Unity game engine. In each
-            turn,
-            a player gets the chance to throw a weapon and try to hit the opponent. The game is built with competitive
-            fun and simplicity in mind,
+            <strong>Batuhan</strong> is a fun two-player turn-based game developed using the Unity game engine.
+            In each turn, a player gets the chance to throw a weapon and try to hit the opponent.
+            The game is built with competitive fun and simplicity in mind,
             offering players a chance to strategize and aim precisely.
           </p>
 
@@ -134,9 +132,9 @@
           </ul>
         </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="https://github.com/your-username/batuhan-game" target="_blank" class="btn btn-primary">
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary custom-btn" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/batuhan-game" target="_blank" class="btn btn-primary custom-btn">
             View on GitHub
           </a>
         </div>
@@ -144,13 +142,18 @@
     </div>
   </div>
 
+
   <!-- Naruto Fall Modal -->
-  <div class="modal fade" id="modalNaruto" tabindex="-1" aria-labelledby="modalNarutoLabel" aria-hidden="true">
+  <div class="modal fade custom-dark-modal" id="modalNaruto" tabindex="-1" aria-labelledby="modalNarutoLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalNarutoLabel">Naruto Fall - Java Mini Game</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content"
+        style="background-color: var(--card-bg); color: var(--dota-text); border: none; box-shadow: var(--card-shadow); animation: modalFadeIn 0.4s var(--ease-out-3);">
+
+        <div class="modal-header border-0" style="background-color: var(--dota-gray);">
+          <h5 class="modal-title" id="modalNarutoLabel" style="color: var(--dota-gold);">Naruto Fall - Java Mini Game
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <div class="modal-body">
@@ -160,7 +163,7 @@
             The game tests the player's reflexes and reaction speed in a progressively challenging environment.
           </p>
 
-          <h6>🎮 Key Features:</h6>
+          <h6 style="color: var(--dota-gold);">🎮 Key Features:</h6>
           <ul>
             <li>✅ Catch falling ramen to score points</li>
             <li>✅ Dodge Rasengans to avoid losing</li>
@@ -169,25 +172,27 @@
             <li>✅ Endless gameplay with increasing difficulty</li>
           </ul>
 
-          <h6>🔗 Project Links:</h6>
+          <h6 style="color: var(--dota-gold);">🔗 Project Links:</h6>
           <ul>
             <li>
-              <a href="https://github.com/your-username/naruto-fall" target="_blank">
+              <a href="https://github.com/your-username/naruto-fall" target="_blank" style="color: var(--dota-red);">
                 🌐 GitHub Repository
               </a>
             </li>
             <li>
               <a href="https://drive.google.com/file/d/1CbNzeiPWd-zRSmi3CwSuFwhJXikQaewj/view?usp=sharing"
-                target="_blank">
+                target="_blank" style="color: var(--dota-red);">
                 📂 Game Materials (JAR file, source code, demo video)
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="https://github.com/your-username/naruto-fall" target="_blank" class="btn btn-primary">
+        <div class="modal-footer border-0">
+          <button type="button" class="btn" style="background-color: var(--dota-gray); color: var(--dota-text);"
+            data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/naruto-fall" target="_blank" class="btn"
+            style="background-color: var(--dota-gold); color: #000;">
             View on GitHub
           </a>
         </div>
@@ -197,14 +202,19 @@
 
 
 
+
   <!-- Face Recognition Modal -->
-  <div class="modal fade" id="modalFaceRecognition" tabindex="-1" aria-labelledby="modalFaceRecognitionLabel"
-    aria-hidden="true">
+  <div class="modal fade custom-dark-modal" id="modalFaceRecognition" tabindex="-1"
+    aria-labelledby="modalFaceRecognitionLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalFaceRecognitionLabel">Face Recognition Attendance System</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content"
+        style="background-color: var(--card-bg); color: var(--dota-text); border: none; box-shadow: var(--card-shadow); animation: modalFadeIn 0.4s var(--ease-out-3);">
+
+        <div class="modal-header border-0" style="background-color: var(--dota-gray);">
+          <h5 class="modal-title" id="modalFaceRecognitionLabel" style="color: var(--dota-gold);">
+            Face Recognition Attendance System
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <div class="modal-body">
@@ -215,7 +225,7 @@
             are recorded in a text-based attendance sheet.
           </p>
 
-          <h6>🧠 Key Features:</h6>
+          <h6 style="color: var(--dota-gold);">🧠 Key Features:</h6>
           <ul>
             <li>✅ Face detection using a Convolutional Neural Network (CNN)</li>
             <li>✅ Face recognition trained from a dataset of user images</li>
@@ -224,26 +234,28 @@
             <li>✅ Built with Python, OpenCV, and optional support for deep learning frameworks</li>
           </ul>
 
-          <h6>🔗 Project Links:</h6>
+          <h6 style="color: var(--dota-gold);">🔗 Project Links:</h6>
           <ul>
             <li>
-              <a href="https://github.com/your-username/face-recognition-attendance" target="_blank">
+              <a href="https://github.com/your-username/face-recognition-attendance" target="_blank"
+                style="color: var(--dota-red);">
                 🌐 GitHub Repository
               </a>
             </li>
             <li>
               <a href="https://drive.google.com/file/d/1c0crpx4y_Hilm3gdk8Zk3OORZDzAoB1q/view?usp=sharing"
-                target="_blank">
+                target="_blank" style="color: var(--dota-red);">
                 📂 Project Materials (training data, demo video, output logs)
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="https://github.com/your-username/face-recognition-attendance" target="_blank"
-            class="btn btn-primary">
+        <div class="modal-footer border-0">
+          <button type="button" class="btn" style="background-color: var(--dota-gray); color: var(--dota-text);"
+            data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/your-username/face-recognition-attendance" target="_blank" class="btn"
+            style="background-color: var(--dota-gold); color: #000;">
             View on GitHub
           </a>
         </div>
@@ -256,340 +268,531 @@
 
 
 
+
   <!-- navbar starts -->
-  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <nav id="navbar-top" class="navbar navbar-expand-lg dota2-navbar sticky-top shadow-sm">
     <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold fs-2 text-primary d-flex align-items-center" href="#">
-  <a class="navbar-brand fw-bold fs-2 text-primary d-flex align-items-center" href="#">
-  <a class="navbar-brand fw-bold fs-2 text-primary d-flex align-items-center" href="#">
-  <img src="images/Marco photo (1).JPG" alt="Marco Allen Gianan" class="rounded-circle me-2" style="height: 40px; width: 40px; object-fit: cover;">
-  
-</a>
-</a>
-</a>
-<button id="theme-toggle" class="btn btn-outline-dark ms-3 rounded-circle d-flex align-items-center justify-content-center" style="width:44px;height:44px;" title="Toggle dark mode">
-  <i class="bi bi-moon-stars-fill" id="theme-icon" style="font-size:1.5rem;"></i>
-</button>
-      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <i class="bi bi-menu-button-fill"></i>
+      <!-- Optional logo or name (you can uncomment and adjust) -->
+      <!--
+    <a class="navbar-brand fw-bold fs-3" href="#" style="color: var(--dota-gold); font-family: 'Orbitron', sans-serif;">
+      <img src="images/Marco photo (1).JPG" alt="Marco Allen Gianan" class="rounded-circle me-2" style="width:40px;height:40px;">
+      Marco Allen Gianan
+    </a>
+    -->
+
+      <!-- Theme Toggle -->
+      <button id="theme-toggle"
+        class="btn btn-outline-light ms-3 rounded-circle d-flex align-items-center justify-content-center"
+        style="width:44px;height:44px; border:2px solid var(--dota-gold);" title="Toggle dark mode">
+        <i class="bi bi-moon-stars-fill" id="theme-icon" style="font-size:1.5rem; color:var(--dota-gold);"></i>
       </button>
+
+      <!-- Mobile menu button -->
+      <button class="navbar-toggler border-0 text-warning" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill" style="font-size: 1.5rem;"></i>
+      </button>
+
+      <!-- Navbar links -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem; font-weight: 500;">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link dota2-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#service">Skill</a>
+            <a class="nav-link dota2-link" href="#service">Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link dota2-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link dota2-link" href="#portfolio">Portfolio</a>
           </li>
-
-
         </ul>
       </div>
-      <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+
+      <!-- Contact button -->
+      <button class="btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+        style="background-color: var(--dota-gold); color: #181818; font-weight: 600;"
         onclick="window.location.href='#contact-form'">Contact</button>
     </div>
   </nav>
-  <!-- navbar ends here -->
+  <!-- navbar ends -->
+
 
   <!-- home section starts  -->
-  
-  <section class="home py-5" id="home">
-  <div class="container">
-    <div class="row align-items-center flex-column-reverse flex-md-row">
-      <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
-        <h1 class="display-5 fw-bold">Hi, I'm <span class="text-primary">Marco Allen A Gianan</span></h1>
-        <p class="lead text-muted">Software Engineer | Full-Stack Developer | Problem Solver</p>
-        <p>I build scalable web applications and engineer solutions using modern technologies.</p>
-        <div class="mt-4">
-          <a href="https://github.com/your-github" class="btn btn-dark me-2 mb-2"><i class="bi bi-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/" class="btn btn-primary mb-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+
+  <section class="home py-5 hover-glow" id="home">
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse flex-md-row">
+        <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+          <h1 class="display-5 fw-bold">Hi, I'm <span class="text-primary">Marco Allen A Gianan</span></h1>
+          <p class="lead text-muted mb-2">Software Engineer | Full-Stack Developer | Problem Solver</p>
+          <p class="mb-3">I build scalable web applications and engineer solutions using modern technologies.</p>
+          <div class="mt-4">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://github.com/your-github" class="btn btn-dark sheen">
+                <i class="bi bi-github me-1"></i> GitHub
+              </a>
+
+              <form action="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/" target="_blank">
+                <button type="submit" class="btn btn-primary sheen" anim="glow">
+                  <i class="bi bi-linkedin me-1"></i> LinkedIn
+                </button>
+              </form>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left">
-        <div class="profile-img-wrapper position-relative">
-          <img src="images/Marco with suit.png" alt="Marco Allen Gianan" class="img-fluid rounded-circle shadow-lg" style="max-width: 250px; border: 5px solid #fff;">
+        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left">
+          <div class="hero-portrait-wrapper">
+            <span class="hero-portrait-bg"></span>
+            <img src="images/Marco with suit.png" alt="Marco Allen Gianan" class="hero-portrait-img">
+            <span class="hero-portrait-glow"></span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- home section ends here -->
 
   <!-- expertise section starts -->
-  <section class="expertise mt-5" id="service" data-aos="fade-up" data-aos-duration="1000">
+  <section class="expertise mt-5 py-5 " id="service" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
-      <div class="heading text-center">
-        <small>My Expertise</small>
-        <!-- <h3>What I’m Passionate About</h3> -->
+      <div class="heading text-center mb-4">
+        <small class="text-uppercase fw-semibold text-danger">My Expertise</small>
       </div>
 
-
-      <div class="row justify-content-evenly mt-5">
+      <div class="row justify-content-evenly">
 
         <!-- Full-Stack Development -->
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img text-center">
-              <div class="img expertise-icon-wrapper">
-                <img src="images/full stack.png" class="expertise-icon" alt="Full Stack" />
-              </div>
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="card h-100 border border-primary shadow-sm">
+            <div class="text-center mt-4">
+              <i class="fas fa-code fa-3x text-primary"></i>
             </div>
-            <div class="content mt-3">
-              <h4>Full-Stack Development</h4>
-              <p class="text-muted">
+            <div class="card-body text-center">
+              <h5 class="card-title">Full-Stack Development</h5>
+              <p class="card-text text-muted">
                 I enjoy building fully responsive web applications using technologies like
                 HTML, CSS, JavaScript, Django, and ASP.NET — covering both frontend and backend.
               </p>
-              
             </div>
           </div>
         </div>
 
         <!-- Machine Learning -->
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img text-center">
-              <div class="img expertise-icon-wrapper">
-                <img src="images/machine learning.png" class="expertise-icon" alt="Machine Learning" />
-              </div>
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="card h-100 border border-success shadow-sm">
+            <div class="text-center mt-4">
+              <i class="fas fa-robot fa-3x text-success"></i>
             </div>
-            <div class="content mt-3">
-              <h4>Machine Learning</h4>
-              <p class="text-muted">
+            <div class="card-body text-center">
+              <h5 class="card-title">Machine Learning</h5>
+              <p class="card-text text-muted">
                 I’ve worked on academic and personal projects involving machine learning, using Python, scikit-learn,
-                and
-                TensorFlow to develop and integrate intelligent models into real-world applications.
+                and TensorFlow to develop and integrate intelligent models into real-world applications.
               </p>
             </div>
           </div>
         </div>
 
         <!-- Data Analytics -->
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img text-center">
-              <div class="expertise-icon-wrapper">
-                <img src="images/Data-analytics-.png" class="expertise-icon" alt="Data Analytics" />
-              </div>
+        <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+          <div class="card h-100 border border-warning shadow-sm">
+            <div class="text-center mt-4">
+              <i class="fas fa-chart-line fa-3x text-warning"></i>
             </div>
-            <div class="content mt-3">
-              <h4>Data Analytics</h4>
-              <p class="text-muted">
+            <div class="card-body text-center">
+              <h5 class="card-title">Data Analytics</h5>
+              <p class="card-text text-muted">
                 I analyze and visualize data using tools like Pandas, Matplotlib, SQL, and Power BI. I love turning raw
                 data into meaningful insights through charts and reports.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
-  <!-- expertise section ends here -->
+  <!-- expertise section ends -->
 
-
-  <!-- skill section starts -->
+  <!-- SKILL SECTION STARTS -->
   <section class="skill mt-5 py-5" id="about" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="heading text-center mb-5">
-        <small>My Skills</small>
-        <h3>Passionate About Building Real-World Solutions</h3>
+        <small class="text-uppercase">My Skills</small>
+        <h3 class="fw-bold">Passionate About Building Real-World Solutions</h3>
         <p class="text-muted">
           As a Computer Science student, I’ve explored both frontend and backend technologies—ranging from Django,
-          ASP.NET, and Flask to JavaScript and Bootstrap. I enjoy learning how different technologies work together to build full-stack applications, and I continue to grow by building projects that solve real-world problems.
+          ASP.NET, and Flask to JavaScript and Bootstrap. I enjoy learning how different technologies work together to
+          build full-stack applications, and I continue to grow by building projects that solve real-world problems.
         </p>
-        <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume" class="btn c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-          Download Resume
+        <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume"
+          class="btn c-btn h-btn mt-3 py-3 px-5 rounded-pill d-inline-flex align-items-center gap-2">
+          <i class="bi bi-download"></i> Download Resume
         </a>
       </div>
-      <div class="row justify-content-center">
-        <!-- HTML -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress html mx-auto mb-2" style="position:relative;">
-              <span class="progress-value html-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">90%</span>
+
+      <div class="row justify-content-center gy-4">
+        <!-- Skill Cards -->
+        <!-- Skill Template -->
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4" data-bs-toggle="tooltip" data-bs-title="Proficiency Level: 90%">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">90%</div>
             </div>
-          
-          </div>
-          
-        </div>
-        <!-- JavaScript -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress javascript mx-auto mb-2" style="position:relative;">
-              <span class="progress-value javascript-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">85%</span>
-            </div>
-            <i class="bi bi-filetype-js mt-3" style="font-size:2.5rem;color:#f7df1e;"></i>
-            <h5 class="mt-3">JavaScript</h5>
+            <img src="files/icons/html5.svg" class="tech-icon my-3" alt="HTML5" title="HTML5">
+            <h6 class="fw-semibold">HTML</h6>
           </div>
         </div>
-        <!-- Python -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress python mx-auto mb-2" style="position:relative;">
-              <span class="progress-value python-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">80%</span>
+
+        <!-- Repeat with updated values for other skills -->
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">80%</div>
             </div>
-            <i class="bi bi-filetype-py mt-3" style="font-size:2.5rem;color:#3776ab;"></i>
-            <h5 class="mt-3">Python</h5>
+            <img src="files/icons/js.svg" class="tech-icon my-3" alt="JavaScript" title="JavaScript">
+            <h6 class="fw-semibold">JavaScript</h6>
           </div>
         </div>
-        <!-- Django -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress django mx-auto mb-2" style="position:relative;">
-              <span class="progress-value django-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">75%</span>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">95%</div>
             </div>
-            <i class="bi bi-filetype-django mt-3" style="font-size:2.5rem;color:#092e20;"></i>
-            <h5 class="mt-3">Django</h5>
+            <img src="files/icons/python.svg" class="tech-icon my-3" alt="Python" title="Python">
+            <h6 class="fw-semibold">Python</h6>
           </div>
         </div>
-        <!-- Flask -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress flask mx-auto mb-2" style="position:relative;">
-              <span class="progress-value flask-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">70%</span>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">90%</div>
             </div>
-            <i class="bi bi-cup-hot mt-3" style="font-size:2.5rem;color:#000;"></i>
-            <h5 class="mt-3">Flask</h5>
+            <img src="files/icons/django.svg" class="tech-icon my-3" alt="Django" title="Django">
+            <h6 class="fw-semibold">Django</h6>
           </div>
         </div>
-        <!-- Bootstrap -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress bootstrap mx-auto mb-2" style="position:relative;">
-              <span class="progress-value bootstrap-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">85%</span>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">80%</div>
             </div>
-            <i class="bi bi-bootstrap mt-3" style="font-size:2.5rem;color:#7952b3;"></i>
-            <h5 class="mt-3">Bootstrap</h5>
+            <img src="files/icons/flask.svg" class="tech-icon my-3" alt="Flask" title="Flask">
+            <h6 class="fw-semibold">Flask</h6>
           </div>
         </div>
-        <!-- C# -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress csharp mx-auto mb-2" style="position:relative;">
-              <span class="progress-value csharp-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">80%</span>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">85%</div>
             </div>
-            <i class="bi bi-filetype-cs mt-3" style="font-size:2.5rem;color:#239120;"></i>
-            <h5 class="mt-3">C#</h5>
+            <img src="files/icons/bootstrap5.svg" class="tech-icon my-3" alt="Bootstrap" title="Bootstrap">
+            <h6 class="fw-semibold">Bootstrap</h6>
           </div>
         </div>
-        <!-- ASP.NET -->
-        <div class="col-6 col-md-3 mb-4">
-          <div class="card text-center shadow-sm h-100 py-4">
-            <div class="circular-progress aspnet mx-auto mb-2" style="position:relative;">
-              <span class="progress-value aspnet-progress" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.2rem;">75%</span>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">90%</div>
             </div>
-            <i class="bi bi-cloud mt-3" style="font-size:2.5rem;color:#512bd4;"></i>
-            <h5 class="mt-3">ASP.NET</h5>
+            <img src="files/icons/csharp.svg" class="tech-icon my-3" alt="C#" title="C#">
+            <h6 class="fw-semibold">C#</h6>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="skill-card text-center p-4">
+            <div class="circle-container">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="circle-text">90%</div>
+            </div>
+            <img src="files/icons/net.svg" class="tech-icon my-3" alt=".NET" title=".NET">
+            <h6 class="fw-semibold">.NET</h6>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- skill section end here -->
+  <!-- SKILL SECTION ENDS -->
 
-  <!-- portfolio section starts here -->
-   <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
+
+  <!-- PORTFOLIO SECTION STARTS -->
+  <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
     <div class="heading text-center pt-5">
       <small>Creative Work</small>
-      <h3>Check My Portfolio</h3>
+      <h3 class="fw-bold">Check My Portfolio</h3>
     </div>
-
+    <!-- Filter Buttons -->
     <div id="myBtnContainer" class="text-center mt-4">
-      <!-- here we will create custom attribute using data- for filtering -->
-      <button class="filter-item" data-filter="all">All</button>
-      <button class="filter-item" data-filter="game">Game</button>
-      <button class="filter-item" data-filter="webapp">Web App</button>
-      <button class="filter-item" data-filter="machine_learning">Machine Learning</button>
-
+      <button class="btn btn-outline-primary filter-item active" data-filter="all">All</button>
+      <button class="btn btn-outline-primary filter-item" data-filter="game">Game</button>
+      <button class="btn btn-outline-primary filter-item" data-filter="webapp">Web App</button>
+      <button class="btn btn-outline-primary filter-item" data-filter="machine_learning">Machine Learning</button>
     </div>
-    <!-- bookstore -->
-      <div class="portfolio-body">
-      <div class="row justify-content-evenly px-4">
-        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/Blue and silver inventory system (1).jpeg" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h4 class="card-title">Bookstore Reservation System</h4>
-              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-              <span class="badge bg-secondary badge-pill">JavaScript</span>
-              <span class="badge bg-secondary badge-pill mb-2">Website</span>
-              <span class="badge bg-secondary badge-pill">ASP.NET</span>
-              <span class="badge bg-secondary badge-pill">MSSQL</span>
-              <span class="badge bg-secondary badge-pill mb-2">AZURE</span>
-              <br />
+    <!-- Portfolio Grid -->
+    <div class="container portfolio-body mt-5">
+      <div class="row g-4 justify-content-center">
+        <!-- Bookstore Reservation System -->
+        <div class="col-md-4 post webapp all">
+          <div class="card h-100 shadow-sm border-0 clickable-card" data-bs-toggle="modal"
+            data-bs-target="#modalBookstore">
+            <!-- Larger, full-width image -->
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/Blue and silver inventory system (1).jpeg"
+                class="card-img-top w-100 h-100 object-fit-cover" alt="Bookstore Reservation System">
+            </div>
+            <!-- Card content -->
+            <div class="card-body d-flex flex-column text-center p-4">
+              <h5 class="card-title fw-bold mb-4" style="font-size: 1.25rem;">
+                Bookstore Reservation System
+              </h5>
+              <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                <span class="badge rounded-pill bg-secondary px-3 py-2">HTML & CSS</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">JavaScript</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">ASP.NET</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">MSSQL</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">Azure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Naruto Fall -->
+        <div class="col-md-4 post game all">
+          <div class="card h-100 shadow-sm border-0 clickable-card" data-bs-toggle="modal"
+            data-bs-target="#modalNaruto">
+            <!-- Full-size, clean image area -->
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/Naruto Fall.png" class="card-img-top w-100 h-100 object-fit-cover" alt="Naruto Fall">
+            </div>
+            <!-- Card body with title and tech -->
+            <div class="card-body d-flex flex-column text-center p-4">
+              <h5 class="card-title fw-bold mb-4" style="font-size: 1.25rem;">Naruto Fall</h5>
+              <div class="d-flex justify-content-center mt-auto">
+                <span class="badge rounded-pill bg-secondary px-3 py-2">Java</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Face Recognition -->
+        <div class="col-md-4 post machine_learning all">
+          <div class="card h-100 shadow-sm border-0 clickable-card" data-bs-toggle="modal"
+            data-bs-target="#modalFaceRecognition">
+            <!-- Larger image area -->
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/face detection.png" class="card-img-top w-100 h-100 object-fit-cover"
+                alt="Face Recognition">
+            </div>
+            <!-- Card content -->
+            <div class="card-body d-flex flex-column text-center p-4">
+              <h5 class="card-title fw-bold mb-4" style="font-size: 1.25rem;">Face Recognition</h5>
+              <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                <span class="badge rounded-pill bg-secondary px-3 py-2">Python</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">OpenCV</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">Dlib</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">face_recognition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Batuhan Game Project -->
+        <div class="col-md-4 post game all">
+          <div class="card h-100 shadow-sm border-0 clickable-card" data-bs-toggle="modal"
+            data-bs-target="#modalBatuhan">
 
-              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalBookstore">
-                Read More
-              </a>
+            <!-- Image section with fixed height -->
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/batuhan (1).png" class="card-img-top w-100 h-100 object-fit-cover"
+                alt="Batuhan Game Project">
             </div>
-          </div>
-        </div>
-        <!-- batuhan  -->
-        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/batuhan (1).png" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h4 class="card-title">Batuhan</h4>
-              <span class="badge bg-secondary badge-pill">C#</span>
-              <span class="badge bg-secondary badge-pill">Unity</span>
-              <br />
-              <!-- Batuhan Link -->
-              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalBatuhan">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- naruto fall -->
-        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/batuhan 2.png" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h4 class="card-title">Naruto Fall</h4>
-              <span class="badge bg-secondary badge-pill">JAVA</span>
-              <br />
-              <!-- Naruto Fall Link -->
-              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalNaruto">
-                Read More
-              </a>
+            <!-- Card content -->
+            <div class="card-body d-flex flex-column text-center p-4">
+              <h5 class="card-title fw-bold mb-4" style="font-size: 1.25rem;">Batuhan Game Project</h5>
+              <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                <span class="badge rounded-pill bg-secondary px-3 py-2">Unity</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">C#</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">Apache</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2">SQL</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- PORTFOLIO SECTION ENDS -->
 
-      <div class="row justify-content-evenly mt-4 px-4">
-        <div class="post col-md-4 machine_learning col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/face detection.png" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h4 class="card-title">Face recognition</h4>
-              <span class="badge bg-secondary badge-pill">Python</span>
-              <span class="badge bg-secondary badge-pill">OpenCV</span>
-              <span class="badge bg-secondary badge-pill">Dlib</span>
-              <span class="badge bg-secondary badge-pill">face_recognition</span>
-              <span class="badge bg-secondary badge-pill mb-2">Machine Learning</span><br />
 
-              <!-- Face Recognition Link -->
-              <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalFaceRecognition">
-                Read More
-              </a>
-            </div>
+  <section id="practicum" class="py-5" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5" style="color: var(--dota-gold);">⚡ My Practicum Highlights</h2>
+        <p class="text-light fs-5 fst-italic">Not just a requirement — this was my dev journey level-up arc.</p>
+      </div>
+
+      <!-- Spotlight Highlights -->
+      <div class="row g-4 text-center text-light">
+        <div class="col-md-3">
+          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="100">
+            <div class="fs-1">🏢</div>
+            <h5 class="mt-3" style="color: var(--dota-gold);">Company</h5>
+            <p>[Company Name], innovating in <em>[Industry]</em>. Fast-paced. Forward-thinking. Real world.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="200">
+            <div class="fs-1">🛠️</div>
+            <h5 class="mt-3" style="color: var(--dota-gold);">Tasks</h5>
+            <p>Solved bugs, built features, assisted on <strong>[Project]</strong>, and wielded
+              <strong>[Tools]</strong>.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="fs-1">⏳</div>
+            <h5 class="mt-3" style="color: var(--dota-gold);">Hours</h5>
+            <h3 class="glow-text fw-bold mt-2">486 / 486</h3>
+            <p>All hours counted. All hours mattered.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="400">
+            <div class="fs-1">🎯</div>
+            <h5 class="mt-3" style="color: var(--dota-gold);">Skills Gained</h5>
+            <p><em>Adaptability. Debugging under pressure. Team synergy. Real dev flow.</em></p>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Timeline -->
+      <div class="timeline mt-5 position-relative" data-aos="fade-up" data-aos-delay="500">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-event left">
+          <div class="content">
+            <h5>🚀 Started Practicum</h5>
+            <p>First steps at [Company Name], onboarding and expectations set.</p>
+          </div>
+        </div>
+        <div class="timeline-event right">
+          <div class="content">
+            <h5>🔧 Midpoint Challenge</h5>
+            <p>Worked on a live module. Solved a major bug. Confidence up.</p>
+          </div>
+        </div>
+        <div class="timeline-event left">
+          <div class="content">
+            <h5>🎤 Final Presentation</h5>
+            <p>Showcased my build and ideas to the team. Got 🔥 feedback.</p>
+          </div>
+        </div>
+        <div class="timeline-event right">
+          <div class="content">
+            <h5>🏁 Mission Complete</h5>
+            <p>486 hours down. Lessons learned. Report submitted. XP gained.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Report -->
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
+        <a href="documents/practicum-report.pdf" class="btn glowing-btn px-4 py-2 fs-5" target="_blank">
+          📥 View Full Report
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- portfolio section ends here -->
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: var(--dota-gold); font-weight: bold;">Certificates</h2>
+        <p class="text-light">Recognition of seminars, trainings, and courses I have completed.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Repeat for each certificate -->
+        <div class="col-md-4">
+          <div class="card shadow" style="background-color: var(--card-bg); border: none;">
+            <img src="images/certificate1.jpg" class="card-img-top" alt="Certificate" />
+            <div class="card-body text-light">
+              <h6 class="card-title" style="color: var(--dota-gold);">Google Cloud Training</h6>
+              <p class="card-text">Completed foundational cloud engineering course under GDG Cloud Manila.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: var(--dota-gold); font-weight: bold;">Achievements</h2>
+        <p class="text-light">Notable accomplishments and awards I've received throughout my academic journey.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Repeat for each achievement -->
+        <div class="col-md-4">
+          <div class="card shadow" style="background-color: var(--card-bg); border: none;">
+            <div class="card-body text-light">
+              <h5 style="color: var(--dota-gold);">🏆 Top 5% in Final Year</h5>
+              <p class="card-text">Ranked among the top 5% in BS Computer Science for outstanding academic performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+    </div>
+  </section>
+
+
+
+
 
 
 
@@ -598,45 +801,37 @@
 
   <!-- contact section starts -->
   <section class="contact py-5" id="contact" data-aos="fade-up" data-aos-duration="1000">
-    <div class="heading text-center">
+    <div class="heading text-center mb-5">
       <small>Get in Touch</small>
       <h3>Any Questions? Feel Free to Contact</h3>
     </div>
-    <div class="row justify-content-evenly mt-5">
-      <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-        <div class="row justify-content-evenly">
-          <div class="col-1">
-            <i class="bi bi-geo-alt-fill"></i>
-          </div>
-          <div class="col-11">
-            <p>BLK 31 lot 5 and 6 Palo Alto Highland 2 Calamba City Laguna</p>
-          </div>
+
+    <div class="row justify-content-evenly">
+      <!-- Contact Details -->
+      <div class="col-md-5 col-10 contact-details text-light" data-aos="slide-right">
+        <div class="mb-4 d-flex">
+          <i class="bi bi-geo-alt-fill me-3 fs-4 text-warning"></i>
+          <p class="mb-0">BLK 31 lot 5 and 6, Palo Alto Highland 2, Calamba City, Laguna</p>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-1">
-            <i class="bi bi-telephone-fill"></i>
-          </div>
-          <div class="col-11">
-            <p>+63 9940401157</p>
-          </div>
+
+        <div class="mb-4 d-flex align-items-start">
+          <i class="bi bi-telephone-fill me-3 fs-4 text-warning"></i>
+          <p class="mb-0">+63 9940401157</p>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-1">
-            <i class="bi bi-send-fill"></i>
-          </div>
-          <div class="col-11">
-            <p>giananmarcoallen@gmail.com</p>
-          </div>
+
+        <div class="mb-4 d-flex align-items-start">
+          <i class="bi bi-send-fill me-3 fs-4 text-warning"></i>
+          <p class="mb-0">giananmarcoallen@gmail.com</p>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-1">
-            <i class="bi bi-linkedin" style="font-size: 1.5rem; color: #ffc107;"></i>
-          </div>
-          <div class="col-11">
-            <a href="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/">
-              <p>Marco Allen A. Gianan</p>
+
+        <div class="mb-4 d-flex align-items-start">
+          <i class="bi bi-linkedin me-3 fs-4 text-warning"></i>
+          <p class="mb-0">
+            <a href="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/"
+              class="text-decoration-none text-light">
+              Marco Allen A. Gianan
             </a>
-          </div>
+          </p>
         </div>
       </div>
 
@@ -684,36 +879,38 @@
     <i class="bi bi-arrow-up"></i>
   </button>
 
+
+
+
+
+
   <!-- footer section starts  -->
-  <footer class="text-center text-muted py-4">
-    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+  <footer class="text-center py-4 dota2-footer"
+    style="background: linear-gradient(90deg, #181818 60%, #2e1a09 100%); border-top: 4px solid #caa552;">
+    <h3 class="text-gold pt-4" data-aos="fade-up" style="font-family: 'Orbitron', serif; letter-spacing: 2px;">The
+      Ancient Portfolio</h3>
     <div class="link-group mt-5" data-aos="fade-up">
-      <a href="#home">Home</a>
+      <a href="#home" class="dota2-link">Home</a>
       <div class="vr"></div>
-      <a href="#about">About</a>
+      <a href="#about" class="dota2-link">About</a>
       <div class="vr"></div>
-
-
-      <a href="#portfolio">Portfolio</a>
+      <a href="#portfolio" class="dota2-link">Portfolio</a>
       <div class="vr"></div>
-
-
-      <a href="#contact">Contact</a>
+      <a href="#contact" class="dota2-link">Contact</a>
     </div>
     <div class="social-links mt-5" data-aos="fade-up">
-      <button href="" class="rounded-pill dribble">
-        <i class="bi bi-dribbble"></i>
+      <button class="rounded-pill dota2-btn" title="Steam">
+        <i class="bi bi-steam"></i>
       </button>
-      <button href="" class="rounded-pill whatsapp">
-        <i class="bi bi-whatsapp"></i>
+      <button class="rounded-pill dota2-btn" title="Discord">
+        <i class="bi bi-discord"></i>
       </button>
-      <button href="" class="rounded-pill behance">
-        <i class="bi bi-behance"></i>
+      <button class="rounded-pill dota2-btn" title="GitHub">
+        <i class="bi bi-github"></i>
       </button>
     </div>
-    <hr class="text-muted my-4" />
-
-    <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+    <hr class="my-4" style="border-color:#caa552;" />
+    <p style="color:#caa552;">&copy; 2025 Marco Allen Gianan | All Rights Reserved.</p>
   </footer>
   <!-- footer section ends here -->
 
@@ -733,6 +930,7 @@
   </script>
   <!-- custom js file linking -->
   <script src="js/script.js"></script>
+
 
 </body>
 

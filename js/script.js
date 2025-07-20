@@ -1,134 +1,53 @@
-// htmlcss progress circular bar 
-// ======= HTML =======
-let htmlProgress = document.querySelector(".html"),
-  htmlValue = document.querySelector(".html-progress");
 
-let htmlStartValue = 0,
-  htmlEndValue = 90,
-  htmlSpeed = 30;
+function setProgress(percent) {
+  const circle = document.querySelector('.ring-progress');
+  const radius = circle.r.baseVal.value;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (percent / 100) * circumference;
+  circle.style.strokeDashoffset = offset;
+}
 
-let progressHtml = setInterval(() => {
-  htmlStartValue++;
-  htmlValue.textContent = `${htmlStartValue}%`;
-  htmlProgress.style.background = `conic-gradient(#fca61f ${htmlStartValue * 3.6}deg, #ededed 0deg)`;
-  if (htmlStartValue === htmlEndValue) clearInterval(progressHtml);
-}, htmlSpeed);
+document.addEventListener("DOMContentLoaded", () => {
+  setProgress(80); // pass your value here
+});
 
 
-// ======= JavaScript =======
-let jsProgress = document.querySelector(".javascript"),
-  jsValue = document.querySelector(".javascript-progress");
 
-let jsStartValue = 0,
-  jsEndValue = 75,
-  jsSpeed = 30;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".skill-card").forEach(card => {
+    const progress = card.querySelector(".ring-progress");
+    const percentText = card.querySelector(".circle-text");
+    if (!progress || !percentText) return;
 
-let progressJs = setInterval(() => {
-  jsStartValue++;
-  jsValue.textContent = `${jsStartValue}%`;
-  jsProgress.style.background = `conic-gradient(#7d2ae8 ${jsStartValue * 3.6}deg, #ededed 0deg)`;
-  if (jsStartValue === jsEndValue) clearInterval(progressJs);
-}, jsSpeed);
+    const percent = parseInt(percentText.textContent);
+    const radius = 54;
+    const circumference = 2 * Math.PI * radius;
+    const offset = circumference - (percent / 100) * circumference;
 
+    progress.style.strokeDashoffset = offset;
+  });
+});
 
-// ======= Python =======
-let pythonProgress = document.querySelector(".python"),
-  pythonValue = document.querySelector(".python-progress");
-
-let pythonStartValue = 0,
-  pythonEndValue = 85,
-  pythonSpeed = 30;
-
-let progressPython = setInterval(() => {
-  pythonStartValue++;
-  pythonValue.textContent = `${pythonStartValue}%`;
-  pythonProgress.style.background = `conic-gradient(#306998 ${pythonStartValue * 3.6}deg, #ededed 0deg)`;
-  if (pythonStartValue === pythonEndValue) clearInterval(progressPython);
-}, pythonSpeed);
-
-
-// ======= Django =======
-let djangoProgress = document.querySelector(".django"),
-  djangoValue = document.querySelector(".django-progress");
-
-let djangoStartValue = 0,
-  djangoEndValue = 80,
-  djangoSpeed = 30;
-
-let progressDjango = setInterval(() => {
-  djangoStartValue++;
-  djangoValue.textContent = `${djangoStartValue}%`;
-  djangoProgress.style.background = `conic-gradient(#092e20 ${djangoStartValue * 3.6}deg, #ededed 0deg)`;
-  if (djangoStartValue === djangoEndValue) clearInterval(progressDjango);
-}, djangoSpeed);
-
-
-// ======= Flask =======
-let flaskProgress = document.querySelector(".flask"),
-  flaskValue = document.querySelector(".flask-progress");
-
-let flaskStartValue = 0,
-  flaskEndValue = 70,
-  flaskSpeed = 30;
-
-let progressFlask = setInterval(() => {
-  flaskStartValue++;
-  flaskValue.textContent = `${flaskStartValue}%`;
-  flaskProgress.style.background = `conic-gradient(#000000 ${flaskStartValue * 3.6}deg, #ededed 0deg)`;
-  if (flaskStartValue === flaskEndValue) clearInterval(progressFlask);
-}, flaskSpeed);
-
-
-// ======= Bootstrap =======
-let bootstrapProgress = document.querySelector(".bootstrap"),
-  bootstrapValue = document.querySelector(".bootstrap-progress");
-
-let bootstrapStartValue = 0,
-  bootstrapEndValue = 85,
-  bootstrapSpeed = 30;
-
-let progressBootstrap = setInterval(() => {
-  bootstrapStartValue++;
-  bootstrapValue.textContent = `${bootstrapStartValue}%`;
-  bootstrapProgress.style.background = `conic-gradient(#563d7c ${bootstrapStartValue * 3.6}deg, #ededed 0deg)`;
-  if (bootstrapStartValue === bootstrapEndValue) clearInterval(progressBootstrap);
-}, bootstrapSpeed);
-
-
-// ======= C# =======
-let csharpProgress = document.querySelector(".csharp"),
-  csharpValue = document.querySelector(".csharp-progress");
-
-let csharpStartValue = 0,
-  csharpEndValue = 75,
-  csharpSpeed = 30;
-
-let progressCsharp = setInterval(() => {
-  csharpStartValue++;
-  csharpValue.textContent = `${csharpStartValue}%`;
-  csharpProgress.style.background = `conic-gradient(#178600 ${csharpStartValue * 3.6}deg, #ededed 0deg)`;
-  if (csharpStartValue === csharpEndValue) clearInterval(progressCsharp);
-}, csharpSpeed);
-
-
-// ======= ASP.NET =======
-let aspnetProgress = document.querySelector(".aspnet"),
-  aspnetValue = document.querySelector(".aspnet-progress");
-
-let aspnetStartValue = 0,
-  aspnetEndValue = 80,
-  aspnetSpeed = 30;
-
-let progressAspnet = setInterval(() => {
-  aspnetStartValue++;
-  aspnetValue.textContent = `${aspnetStartValue}%`;
-  aspnetProgress.style.background = `conic-gradient(#512bd4 ${aspnetStartValue * 3.6}deg, #ededed 0deg)`;
-  if (aspnetStartValue === aspnetEndValue) clearInterval(progressAspnet);
-}, aspnetSpeed);
 
 
 // filter using javascript
 $(document).ready(function () {
+  const filterButtons = document.querySelectorAll(".filter-item");
+  const filterNameDisplay = document.getElementById("filterName");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+
+      // Add active class to clicked button
+      this.classList.add("active");
+
+      // Update the current filter name
+      const filter = this.getAttribute("data-filter");
+      filterNameDisplay.textContent = filter.replace("_", " ").replace(/\b\w/g, c => c.toUpperCase());
+    });
+  });
   $(".filter-item").click(function () {
     const value = $(this).attr("data-filter");
     if (value == "all") {
@@ -213,18 +132,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.getElementById('theme-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-  const icon = document.getElementById('theme-icon');
-  if (document.body.classList.contains('dark-mode')) {
-    icon.classList.remove('bi-moon-stars-fill');
-    icon.classList.add('bi-sun-fill');
-  } else {
-    icon.classList.remove('bi-sun-fill');
-    icon.classList.add('bi-moon-stars-fill');
-  }
-});
+
 
 
 });
 
+
+document.querySelectorAll('.clickable-card').forEach(card => {
+  card.addEventListener('click', function (e) {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+
+    // Get click coordinates relative to the card
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+
+    // Set size
+    ripple.style.width = ripple.style.height = `${Math.max(rect.width, rect.height)}px`;
+
+    card.appendChild(ripple);
+
+    // Remove after animation
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
+
+
+
+
+// for shiny button linkin
+let anims = [...document.querySelectorAll("[anim]")];
+console.log(anims);
+let click = (el, cb) => el.addEventListener("click", cb);
+let toggle = (el) => el.classList.toggle("toggled");
+let clickTog = (el) => click(el, () => toggle(el));
+anims.map(clickTog);
