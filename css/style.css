@@ -1067,3 +1067,146 @@ button {
     transform: translate(1px, -1px);
   }
 }
+
+#btn-back-to-top {
+  margin-left: auto;
+  background-color: var(--dota-gold);
+}
+
+
+#btn-back-to-top:hover {
+  color: red;
+}
+
+/* Typewriter Effect */
+.typewriter-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid rgba(255, 255, 255, .75);
+  animation:
+    typewriter 3s steps(30, end) 1s 1 normal both,
+    blinkingCursor 600ms steps(40, end) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkingCursor {
+  0% {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  49% {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  50% {
+    border-right-color: transparent;
+  }
+
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+/* Dropping Texts */
+.dropping-texts {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  /* Increased height to accommodate larger text */
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+
+.dropping-texts>div {
+  font-size: 2.5rem;
+  /* Increased from 2rem to 2.5rem */
+  opacity: 0;
+  position: absolute;
+  font-weight: 600;
+  /* Increased from 300 to 600 for better legibility */
+  color: var(--dota-gold);
+  /* Optional: to match theme */
+}
+
+
+.dropping-texts>div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+
+.dropping-texts>div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+
+.dropping-texts>div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+
+.dropping-texts>div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  27% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    font-size: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  37% {
+    opacity: 0;
+    transform: scale(10) translateY(-200px);
+  }
+
+  100% {
+    font-size: 0px;
+    opacity: 0;
+  }
+}

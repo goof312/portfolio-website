@@ -318,12 +318,23 @@
     <div class="container">
       <div class="row align-items-center flex-column-reverse flex-md-row">
         <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
-          <h1 class="display-5 fw-bold">Hi, I'm <span class="text-primary">Marco Allen A Gianan</span></h1>
-          <p class="lead text-muted mb-2">Software Engineer | Full-Stack Developer | Problem Solver</p>
+          <div>
+            <h1 class="display-5 fw-bold typewriter-animation" style="font-size: 40px; color: var(--dota-gold);">
+              Hi, I'm <span style="color: white;">Marco Allen A Gianan</span>
+            </h1>
+          </div>
+
+          <div class="dropping-texts fw-semibold" style="color: var(--dota-gold);">
+            <div>Software Engineer</div>
+            <div>Full-Stack Developer</div>
+            <div>Problem Solver</div>
+            <div>Tech Enthusiast</div>
+          </div>
+
           <p class="mb-3">I build scalable web applications and engineer solutions using modern technologies.</p>
           <div class="mt-4">
             <div class="d-flex flex-wrap gap-2">
-              <a href="https://github.com/your-github" class="btn btn-dark sheen">
+              <a href="https://github.com/goof312" class="btn btn-dark sheen">
                 <i class="bi bi-github me-1"></i> GitHub
               </a>
 
@@ -415,133 +426,144 @@
   <!-- SKILL SECTION STARTS -->
   <section class="skill mt-5 py-5" id="about" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
-      <div class="heading text-center mb-5">
-        <small class="text-uppercase">My Skills</small>
-        <h3 class="fw-bold">Passionate About Building Real-World Solutions</h3>
-        <p class="text-muted">
+
+      <div class="row align-items-center">
+        <!-- Left Column: Text and Resume -->
+
+        <div class="col-md-6 mb-5 mb-md-0 align-self-start">
+          <p class="text-muted">
+          <div class="heading text-center mb-5">
+            <small class="text-uppercase">My Skills</small>
+            <h3 class="fw-bold">Passionate About Building Real-World Solutions</h3>
+          </div>
           As a Computer Science student, I’ve explored both frontend and backend technologies—ranging from Django,
           ASP.NET, and Flask to JavaScript and Bootstrap. I enjoy learning how different technologies work together to
           build full-stack applications, and I continue to grow by building projects that solve real-world problems.
-        </p>
-        <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume"
-          class="btn c-btn h-btn mt-3 py-3 px-5 rounded-pill d-inline-flex align-items-center gap-2">
-          <i class="bi bi-download"></i> Download Resume
-        </a>
-      </div>
-
-      <div class="row justify-content-center gy-4">
-        <!-- Skill Cards -->
-        <!-- Skill Template -->
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4" data-bs-toggle="tooltip" data-bs-title="Proficiency Level: 90%">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">90%</div>
-            </div>
-            <img src="files/icons/html5.svg" class="tech-icon my-3" alt="HTML5" title="HTML5">
-            <h6 class="fw-semibold">HTML</h6>
+          </p>
+          <div class="text-center mt-4">
+            <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume"
+              class="btn c-btn h-btn py-3 px-5 rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+              <i class="bi bi-download"></i> Download Resume
+            </a>
           </div>
+
         </div>
 
-        <!-- Repeat with updated values for other skills -->
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">80%</div>
+        <!-- Right Column: Skill Cards -->
+        <div class="col-md-6">
+          <div class="row gy-4">
+            <!-- Skill Cards (unchanged, just nested inside a row) -->
+            <div class="col-6">
+              <div class="skill-card text-center p-4" data-bs-toggle="tooltip" data-bs-title="Proficiency Level: 90%">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">90%</div>
+                </div>
+                <img src="files/icons/html5.svg" class="tech-icon my-3" alt="HTML5">
+                <h6 class="fw-semibold">HTML</h6>
+              </div>
             </div>
-            <img src="files/icons/js.svg" class="tech-icon my-3" alt="JavaScript" title="JavaScript">
-            <h6 class="fw-semibold">JavaScript</h6>
-          </div>
-        </div>
 
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">95%</div>
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">80%</div>
+                </div>
+                <img src="files/icons/js.svg" class="tech-icon my-3" alt="JavaScript">
+                <h6 class="fw-semibold">JavaScript</h6>
+              </div>
             </div>
-            <img src="files/icons/python.svg" class="tech-icon my-3" alt="Python" title="Python">
-            <h6 class="fw-semibold">Python</h6>
-          </div>
-        </div>
 
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">90%</div>
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">95%</div>
+                </div>
+                <img src="files/icons/python.svg" class="tech-icon my-3" alt="Python">
+                <h6 class="fw-semibold">Python</h6>
+              </div>
             </div>
-            <img src="files/icons/django.svg" class="tech-icon my-3" alt="Django" title="Django">
-            <h6 class="fw-semibold">Django</h6>
-          </div>
-        </div>
 
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">80%</div>
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">90%</div>
+                </div>
+                <img src="files/icons/django.svg" class="tech-icon my-3" alt="Django">
+                <h6 class="fw-semibold">Django</h6>
+              </div>
             </div>
-            <img src="files/icons/flask.svg" class="tech-icon my-3" alt="Flask" title="Flask">
-            <h6 class="fw-semibold">Flask</h6>
-          </div>
-        </div>
 
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">85%</div>
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">80%</div>
+                </div>
+                <img src="files/icons/flask.svg" class="tech-icon my-3" alt="Flask">
+                <h6 class="fw-semibold">Flask</h6>
+              </div>
             </div>
-            <img src="files/icons/bootstrap5.svg" class="tech-icon my-3" alt="Bootstrap" title="Bootstrap">
-            <h6 class="fw-semibold">Bootstrap</h6>
-          </div>
-        </div>
 
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">90%</div>
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">85%</div>
+                </div>
+                <img src="files/icons/bootstrap5.svg" class="tech-icon my-3" alt="Bootstrap">
+                <h6 class="fw-semibold">Bootstrap</h6>
+              </div>
             </div>
-            <img src="files/icons/csharp.svg" class="tech-icon my-3" alt="C#" title="C#">
-            <h6 class="fw-semibold">C#</h6>
-          </div>
-        </div>
 
-        <div class="col-6 col-md-3">
-          <div class="skill-card text-center p-4">
-            <div class="circle-container">
-              <svg class="progress-ring" width="120" height="120">
-                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
-                <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
-              </svg>
-              <div class="circle-text">90%</div>
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">90%</div>
+                </div>
+                <img src="files/icons/csharp.svg" class="tech-icon my-3" alt="C#">
+                <h6 class="fw-semibold">C#</h6>
+              </div>
             </div>
-            <img src="files/icons/net.svg" class="tech-icon my-3" alt=".NET" title=".NET">
-            <h6 class="fw-semibold">.NET</h6>
+
+            <div class="col-6">
+              <div class="skill-card text-center p-4">
+                <div class="circle-container">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-progress" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <div class="circle-text">90%</div>
+                </div>
+                <img src="files/icons/net.svg" class="tech-icon my-3" alt=".NET">
+                <h6 class="fw-semibold">.NET</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -733,12 +755,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
       <!-- Timeline -->
       <div class="timeline mt-5 position-relative" data-aos="fade-up" data-aos-delay="500">
         <div class="timeline-line"></div>
@@ -746,7 +762,7 @@
         <!-- Timeline Event -->
         <div class="timeline-event left">
           <div class="content">
-            <h5 class="timeline-title">🏢 Company Overview</h5>
+            <h5 class="timeline-title" style="color: var(--dota-gold)">🏢 Company Overview</h5>
             <p class="timeline-text">
               STMicroelectronics Calamba is a major branch of a global semiconductor company. Located in Laguna, it
               handles key operations in research, assembly, and testing of microelectronics for industries such as
@@ -757,8 +773,8 @@
 
         <div class="timeline-event right">
           <div class="content">
-            <h5 class="timeline-title">🛠️ Nature of Tasks</h5>
-            <p class="timeline-text">
+            <h5 class="timeline-title" style="color: var(--dota-gold)">🛠️ Nature of Tasks</h5>
+            <p class=" timeline-text">
               My practicum focused on real-world software development. After training in Power BI and the 7QC tools, I
               helped build the internal <strong>GJIT System</strong>. It includes inventory modules such as <em>JAFS
                 Inventory</em> and <em>Gas Inventory</em>, using technologies like ASP.NET MVC, MSSQL, and Bootstrap in
@@ -769,7 +785,7 @@
 
         <div class="timeline-event left">
           <div class="content">
-            <h5 class="timeline-title">⏳ Hours Rendered</h5>
+            <h5 class="timeline-title" style="color: var(--dota-gold)">⏳ Hours Rendered</h5>
             <p class="timeline-text">
               I rendered a total of <strong>324 hours</strong>:
               <br>- Orientation: 52 hours
@@ -783,7 +799,7 @@
 
         <div class="timeline-event right">
           <div class="content">
-            <h5 class="timeline-title">🎯 Conclusion</h5>
+            <h5 class="timeline-title" style="color: var(--dota-gold)">🎯 Conclusion</h5>
             <p class="timeline-text">
               This experience sharpened my skills in software development, teamwork, and communication. It taught me to
               solve real problems, manage time effectively, and maintain professionalism—key traits for future success
@@ -792,7 +808,6 @@
           </div>
         </div>
       </div>
-
 
       <!-- Download Report -->
       <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
@@ -809,21 +824,124 @@
         <h2 style="color: var(--dota-gold); font-weight: bold;">Certificates</h2>
         <p class="text-light">Recognition of seminars, trainings, and courses I have completed.</p>
       </div>
-      <div class="row g-4 justify-content-center">
-        <!-- Repeat for each certificate -->
-        <div class="col-md-4">
-          <div class="card shadow" style="background-color: var(--card-bg); border: none;">
-            <img src="images/certificate1.jpg" class="card-img-top" alt="Certificate" />
-            <div class="card-body text-light">
-              <h6 class="card-title" style="color: var(--dota-gold);">Google Cloud Training</h6>
-              <p class="card-text">Completed foundational cloud engineering course under GDG Cloud Manila.</p>
+
+      <div class="row">
+        <!-- Certificate 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow bg-dark border-0 h-100">
+            <!-- Image Container -->
+            <div class="d-flex align-items-center justify-content-center bg-black"
+              style="height: 200px; overflow: hidden;">
+              <img src="images/python for everybody.jpeg" alt="Certificate of Completion" class="img-fluid"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <div class="p-3">
+              <h5 class="card-title" style="color: var(--dota-gold);">Coursera - Django for Everybody (Specialization)
+              </h5>
+              <p class="text-muted mb-1">Issued by Coursera | June 2024</p>
+              <p class="card-text">
+                🔗 <a href="https://www.coursera.org/account/accomplishments/specialization/2HQ4OE3LXLLP"
+                  target="_blank">View Certificate</a>
+              </p>
+              <ul class="mb-0">
+                <li>Web Application Technologies and Django</li>
+                <li>Building Web Applications in Django</li>
+                <li>Django Features and Libraries</li>
+                <li>Using JavaScript and JSON in Django</li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- Add more cards here -->
+
+        <!-- Certificate 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow bg-dark border-0 h-100">
+            <!-- Image Container -->
+            <div class="d-flex align-items-center justify-content-center bg-black"
+              style="height: 200px; overflow: hidden;">
+              <img src="images/Coursera - Django Features and Libraries.jpeg" alt="Certificate of Completion"
+                class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <div class="p-3">
+              <h5 class="card-title" style="color: var(--dota-gold);">Coursera - Django Features and Libraries</h5>
+              <p class="text-muted mb-1">Issued by Coursera | June 2024</p>
+              <p class="card-text">
+                🔗 <a href="https://www.coursera.org/account/accomplishments/specialization/2HQ4OE3LXLLP"
+                  target="_blank">View Certificate</a>
+              </p>
+              <ul class="mb-0">
+                <li>Django Sessions & Cookies</li>
+                <li>Built-in Login System</li>
+                <li>One-to-Many Models</li>
+                <li>Generic Edit View</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow bg-dark border-0 h-100">
+            <!-- Image Container -->
+            <div class="d-flex align-items-center justify-content-center bg-black"
+              style="height: 200px; overflow: hidden;">
+              <img src="images/Comptia.png" alt="Certificate of Completion" class="img-fluid"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+
+            <div class="p-3">
+              <h5 class="card-title" style="color: var(--dota-gold);">CompTIA IT Fundamentals+ (ITF+)</h5>
+              <p class="text-muted mb-1">Issued by CompTIA | June 2024</p>
+              <p class="card-text">
+                🔗 <a href="https://www.credly.com/badges/0167c5d7-038a-4fe6-95e7-2e1d825dfab0/linked_in_profile"
+                  target="_blank">View Certificate</a>
+              </p>
+              <ul class="mb-0">
+                <li>Networking & Security Awareness</li>
+                <li>Applications & Databases</li>
+                <li>Business Continuity</li>
+                <li>Basic Programming Concepts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 4  AWS-->
+        <!-- Certificate Card -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow bg-dark border-0 h-100">
+
+            <!-- Image Container -->
+            <div class="d-flex align-items-center justify-content-center bg-black"
+              style="height: 200px; overflow: hidden;">
+              <img src="images/aws.png" alt="Certificate of Completion" class="img-fluid"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+
+            <div class="p-3">
+              <h5 class="card-title" style="color: var(--dota-gold);">AWS Academy Cloud Foundations</h5>
+              <p class="text-muted mb-1">Issued by AWS Academy | June 2024</p>
+              <p class="card-text">
+                🔗 <a href="https://www.credly.com/badges/9f3ce4a6-ba4e-445a-88a4-1bd129d984bb/linked_in_profile"
+                  target="_blank">
+                  View Certificate</a>
+              </p>
+              <ul class="mb-0">
+                <li>Cloud Infrastructure Concepts</li>
+                <li>Core AWS Services</li>
+                <li>Cloud Pricing Models</li>
+                <li>AWS Support Plans</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
   </section>
+
+
+
+
 
   <!-- Achievements Section -->
   <section id="achievements" class="py-5" data-aos="fade-up" data-aos-duration="1000">
@@ -933,10 +1051,7 @@
   </section>
   <!-- contact section ends here -->
 
-  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
-    <i class="bi bi-arrow-up"></i>
-  </button>
+
 
 
 
@@ -967,10 +1082,18 @@
       <button class="rounded-pill dota2-btn" title="GitHub">
         <i class="bi bi-github"></i>
       </button>
+      <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </div>
     <hr class="my-4" style="border-color:#caa552;" />
     <p style="color:#caa552;">&copy; 2025 Marco Allen Gianan | All Rights Reserved.</p>
+
+
+
   </footer>
+  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+
   <!-- footer section ends here -->
 
   <!-- bootstrap javascript cdn link  -->
