@@ -272,20 +272,12 @@
   <!-- navbar starts -->
   <nav id="navbar-top" class="navbar navbar-expand-lg dota2-navbar sticky-top shadow-sm">
     <div class="container-fluid px-5">
-      <!-- Optional logo or name (you can uncomment and adjust) -->
-      <!--
-    <a class="navbar-brand fw-bold fs-3" href="#" style="color: var(--dota-gold); font-family: 'Orbitron', sans-serif;">
-      <img src="images/Marco photo (1).JPG" alt="Marco Allen Gianan" class="rounded-circle me-2" style="width:40px;height:40px;">
-      Marco Allen Gianan
-    </a>
-    -->
 
-      <!-- Theme Toggle -->
-      <button id="theme-toggle"
-        class="btn btn-outline-light ms-3 rounded-circle d-flex align-items-center justify-content-center"
-        style="width:44px;height:44px; border:2px solid var(--dota-gold);" title="Toggle dark mode">
-        <i class="bi bi-moon-stars-fill" id="theme-icon" style="font-size:1.5rem; color:var(--dota-gold);"></i>
-      </button>
+      <div class="glitch-container">
+        <h1 id="mainName" class="glitch-text">Marco Allen A. Gianan</h1>
+      </div>
+
+
 
       <!-- Mobile menu button -->
       <button class="navbar-toggler border-0 text-warning" type="button" data-bs-toggle="collapse"
@@ -294,7 +286,7 @@
       </button>
 
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-4" style="font-size: 1.1rem; font-weight: 500;">
           <li class="nav-item">
             <a class="nav-link dota2-link" aria-current="page" href="#">Home</a>
@@ -671,77 +663,143 @@
         <p class="text-light fs-5 fst-italic">Not just a requirement — this was my dev journey level-up arc.</p>
       </div>
 
-      <!-- Spotlight Highlights -->
-      <div class="row g-4 text-center text-light">
+      <div class="row">
+        <!-- Company Card -->
         <div class="col-md-3">
-          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="100">
-            <div class="fs-1">🏢</div>
-            <h5 class="mt-3" style="color: var(--dota-gold);">Company</h5>
-            <p>[Company Name], innovating in <em>[Industry]</em>. Fast-paced. Forward-thinking. Real world.</p>
+          <div class="spotlight-card p-4 rounded sheen hover-zoom d-flex flex-column h-100" data-aos="zoom-in-up"
+            data-aos-delay="100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="files/icons/ST_logo_2020_blue_V.svg.png" alt="STMicroelectronics Logo"
+                style="width: 50px; height: auto;">
+              <h5 class="mb-0 fw-bold" style="color: var(--dota-gold);">Company</h5>
+            </div>
+            <p class="fw-medium fs-6 lh-base text-start">
+              <strong>STMicroelectronics</strong> is a global leader in semiconductor technology, providing solutions
+              for automotive, industrial, and IoT applications.
+            </p>
+            <p class="fw-medium fs-6 lh-base text-start mb-0">
+              <em>Fast-paced. Forward-thinking. Real-world impact.</em>
+            </p>
           </div>
         </div>
+
+        <!-- Tasks Card -->
         <div class="col-md-3">
-          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="200">
-            <div class="fs-1">🛠️</div>
-            <h5 class="mt-3" style="color: var(--dota-gold);">Tasks</h5>
-            <p>Solved bugs, built features, assisted on <strong>[Project]</strong>, and wielded
-              <strong>[Tools]</strong>.</p>
+          <div class="spotlight-card p-4 rounded sheen hover-zoom d-flex flex-column h-100" data-aos="zoom-in-up"
+            data-aos-delay="200">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="fs-3">🛠️</div>
+              <h5 class="mb-0 fw-bold" style="color: var(--dota-gold);">Tasks</h5>
+            </div>
+            <p class="fw-medium fs-6 lh-base text-start">
+              Developed the <strong>JAFS Inventory System</strong> and <strong>Industrial Gas Inventory System</strong>
+              to streamline workflows.
+              Contributed to a <strong>Power BI</strong> dashboard for visual analytics.
+            </p>
+            <p class="fw-medium fs-6 lh-base text-start mb-0">
+              <em>Tools: C#, SQL Server, Power BI</em>
+            </p>
           </div>
         </div>
+
+        <!-- Hours Card -->
         <div class="col-md-3">
-          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="300">
-            <div class="fs-1">⏳</div>
-            <h5 class="mt-3" style="color: var(--dota-gold);">Hours</h5>
-            <h3 class="glow-text fw-bold mt-2">486 / 486</h3>
-            <p>All hours counted. All hours mattered.</p>
+          <div class="spotlight-card p-4 rounded sheen hover-zoom d-flex flex-column h-100" data-aos="zoom-in-up"
+            data-aos-delay="300">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="fs-3">⏳</div>
+              <h5 class="mb-0 fw-bold" style="color: var(--dota-gold);">Hours</h5>
+            </div>
+            <p class="glow-text fw-bold fs-5 text-start mb-2">486 Hours</p>
+            <p class="fw-medium fs-6 lh-base text-start mb-0">
+              Completed full internship hours through structured training, collaborative development, and thorough
+              documentation.
+            </p>
           </div>
         </div>
+
+        <!-- Skills Gained Card -->
         <div class="col-md-3">
-          <div class="spotlight-card p-4 rounded sheen hover-zoom" data-aos="zoom-in-up" data-aos-delay="400">
-            <div class="fs-1">🎯</div>
-            <h5 class="mt-3" style="color: var(--dota-gold);">Skills Gained</h5>
-            <p><em>Adaptability. Debugging under pressure. Team synergy. Real dev flow.</em></p>
+          <div class="spotlight-card p-4 rounded sheen hover-zoom d-flex flex-column h-100" data-aos="zoom-in-up"
+            data-aos-delay="400">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="fs-3">🎯</div>
+              <h5 class="mb-0 fw-bold" style="color: var(--dota-gold);">Skills Gained</h5>
+            </div>
+            <p class="fw-medium fs-6 lh-base text-start mb-0">
+              <em>Adaptability, debugging under pressure, collaboration, and real-world software development
+                experience.</em>
+            </p>
           </div>
         </div>
       </div>
+
+
+
+
+
 
       <!-- Timeline -->
       <div class="timeline mt-5 position-relative" data-aos="fade-up" data-aos-delay="500">
         <div class="timeline-line"></div>
 
+        <!-- Timeline Event -->
         <div class="timeline-event left">
           <div class="content">
-            <h5>🚀 Started Practicum</h5>
-            <p>First steps at [Company Name], onboarding and expectations set.</p>
+            <h5 class="timeline-title">🏢 Company Overview</h5>
+            <p class="timeline-text">
+              STMicroelectronics Calamba is a major branch of a global semiconductor company. Located in Laguna, it
+              handles key operations in research, assembly, and testing of microelectronics for industries such as
+              automotive and IoT. The facility demonstrates ST’s commitment to innovation and sustainability.
+            </p>
           </div>
         </div>
+
         <div class="timeline-event right">
           <div class="content">
-            <h5>🔧 Midpoint Challenge</h5>
-            <p>Worked on a live module. Solved a major bug. Confidence up.</p>
+            <h5 class="timeline-title">🛠️ Nature of Tasks</h5>
+            <p class="timeline-text">
+              My practicum focused on real-world software development. After training in Power BI and the 7QC tools, I
+              helped build the internal <strong>GJIT System</strong>. It includes inventory modules such as <em>JAFS
+                Inventory</em> and <em>Gas Inventory</em>, using technologies like ASP.NET MVC, MSSQL, and Bootstrap in
+              Visual Studio.
+            </p>
           </div>
         </div>
+
         <div class="timeline-event left">
           <div class="content">
-            <h5>🎤 Final Presentation</h5>
-            <p>Showcased my build and ideas to the team. Got 🔥 feedback.</p>
+            <h5 class="timeline-title">⏳ Hours Rendered</h5>
+            <p class="timeline-text">
+              I rendered a total of <strong>324 hours</strong>:
+              <br>- Orientation: 52 hours
+              <br>- OJT Practice: 72 hours
+              <br>- System Development: 160 hours
+              <br>- Documentation: 40 hours
+              <br>Each phase contributed to both my technical and professional development.
+            </p>
           </div>
         </div>
+
         <div class="timeline-event right">
           <div class="content">
-            <h5>🏁 Mission Complete</h5>
-            <p>486 hours down. Lessons learned. Report submitted. XP gained.</p>
+            <h5 class="timeline-title">🎯 Conclusion</h5>
+            <p class="timeline-text">
+              This experience sharpened my skills in software development, teamwork, and communication. It taught me to
+              solve real problems, manage time effectively, and maintain professionalism—key traits for future success
+              in the tech industry.
+            </p>
           </div>
         </div>
       </div>
 
+
       <!-- Download Report -->
       <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
-        <a href="documents/practicum-report.pdf" class="btn glowing-btn px-4 py-2 fs-5" target="_blank">
+        <a href="files/narrative_Gianan.pdf" target="_blank" class="btn report-btn">
           📥 View Full Report
         </a>
-      </div>
-    </div>
+      </div </div>
   </section>
 
   <!-- Certificates Section -->
@@ -775,28 +833,29 @@
         <p class="text-light">Notable accomplishments and awards I've received throughout my academic journey.</p>
       </div>
       <div class="row g-4 justify-content-center">
-        <!-- Repeat for each achievement -->
-        <div class="col-md-4">
-          <div class="card shadow" style="background-color: var(--card-bg); border: none;">
-            <div class="card-body text-light">
-              <h5 style="color: var(--dota-gold);">🏆 Top 5% in Final Year</h5>
-              <p class="card-text">Ranked among the top 5% in BS Computer Science for outstanding academic performance.
-              </p>
+
+        <!-- Achievement Card 2 -->
+        <div class="col-md-4 d-flex">
+          <div class="card shadow flex-fill" style="background-color: var(--card-bg); border: none;">
+            <div class="card-body text-light text-start">
+              <h5 class="mb-2" style="color: var(--dota-gold);">🎓 Dean's Lister Awardee (2023)</h5>
+              <p class="card-text">Recognized for achieving high academic distinction in the year 2023.</p>
             </div>
           </div>
         </div>
-        <!-- Add more cards here -->
+
+        <!-- Achievement Card 3 -->
+        <div class="col-md-4 d-flex">
+          <div class="card shadow flex-fill" style="background-color: var(--card-bg); border: none;">
+            <div class="card-body text-light text-start">
+              <h5 class="mb-2" style="color: var(--dota-gold);">🎓 Dean's Lister Awardee (2024)</h5>
+              <p class="card-text">Consistently maintained excellent academic standing throughout the year 2024.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
 
 
   <!-- contact section starts -->

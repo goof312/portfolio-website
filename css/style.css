@@ -133,11 +133,6 @@ section h2 {
 }
 
 
-
-
-
-
-
 .intro h2 {
   font-size: 3rem;
   color: var(--accent);
@@ -922,6 +917,13 @@ button {
   border-radius: 10px;
   padding: 15px 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  width: 100%;
+  min-height: 220px;
+  /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .timeline-event.left {
@@ -953,4 +955,115 @@ button {
 
 .timeline-event.right::before {
   left: -10px;
+}
+
+.timeline-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.report-btn {
+  display: inline-block;
+  background-color: #caa552;
+  /* Dota-gold */
+  color: #181818;
+  /* Dark background contrast */
+  border: 2px solid #caa552;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.report-btn:hover {
+  background-color: transparent;
+  color: #caa552;
+  border: 2px solid #caa552;
+  text-decoration: none;
+}
+
+/* This section is for Marco Allen A. Gianan Effect */
+
+
+.glitch-text {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  color: var(--dota-gold);
+  /* Use your main highlight color */
+  animation: glitch 2s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: 'Marco Allen A. Gianan';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  animation: glitch 2s infinite;
+}
+
+.glitch-text::before {
+  color: var(--dota-red);
+  /* Red glitch trail */
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+}
+
+.glitch-text::after {
+  color: var(--dota-green);
+  /* Green glitch trail */
+  clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
+}
+
+/* Here adjust base on screen size*/
+
+@media screen and (max-width: 576px) {
+  .glitch-text {
+    font-size: 5rem;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    animation: glitch 2s infinite;
+  }
+
+  .glitch-text::before,
+  .glitch-text::after {
+    content: 'M';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff005e;
+    background: transparent;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+    animation: glitch 2s infinite;
+  }
+}
+
+@keyframes glitch {
+
+  0%,
+  100% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, -2px);
+  }
+
+  60% {
+    transform: translate(-1px, 1px);
+  }
+
+  80% {
+    transform: translate(1px, -1px);
+  }
 }
