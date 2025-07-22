@@ -30,6 +30,7 @@ body {
   background-color: var(--dota-bg);
   color: var(--dota-text);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -577,10 +578,15 @@ section {
   width: 120px;
   height: 120px;
   margin: auto;
+  aspect-ratio: 1/1;
 }
 
 .progress-ring {
+  width: 100%;
+  height: 100%;
+  display: block;
   transform: rotate(-90deg);
+
 }
 
 .ring-bg {
@@ -607,10 +613,24 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ffc107;
-  letter-spacing: 1px;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1;
+  /* prevent vertical shift due to font metrics */
 }
+
+@media (max-width: 576px) {
+  .circle-text {
+    font-size: 0.9rem;
+  }
+
+  .narrative-card {
+    margin-bottom: 1rem;
+  }
+}
+
 
 .tech-icon {
   width: 40px;
@@ -679,6 +699,10 @@ h6.fw-semibold {
 }
 
 
+/* font animation */
+h1.typewriter-animation {
+  font-size: 40px;
+}
 
 
 
@@ -691,11 +715,20 @@ h6.fw-semibold {
   .card-img-container {
     height: 180px;
   }
+
+  h1.typewriter-animation {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 576px) {
   .card-img-container {
     height: 140px;
+  }
+
+  h1.typewriter-animation {
+    font-size: 25px;
+    margin-top: 1em;
   }
 }
 
@@ -963,6 +996,34 @@ button {
   margin-bottom: 0.8rem;
 }
 
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .timeline {
+    padding: 1rem 0;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-event,
+  .timeline-event.left,
+  .timeline-event.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-event .content {
+    border-left: 6px solid var(--dota-gold);
+    /* background: #111; */
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+  }
+}
+
 .report-btn {
   display: inline-block;
   background-color: #caa552;
@@ -1086,6 +1147,7 @@ button {
   animation:
     typewriter 3s steps(30, end) 1s 1 normal both,
     blinkingCursor 600ms steps(40, end) infinite;
+  font-size: 40px;
 }
 
 @keyframes typewriter {
