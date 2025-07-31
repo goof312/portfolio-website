@@ -251,8 +251,8 @@
   <nav id="navbar-top" class="navbar navbar-expand-lg dota2-navbar sticky-top shadow-sm">
     <div class="container-fluid px-5">
 
-      <div class="glitch-container">
-        <h1 id="mainName" class="glitch-text">Marco Allen A. Gianan</h1>
+      <div class="">
+        <h1 id="mainName" class="dota2-link">Marco Allen A. Gianan</h1>
       </div>
 
 
@@ -262,6 +262,46 @@
         data-bs-target="#navbarNav">
         <i class="bi bi-menu-button-fill" style="font-size: 1.5rem;"></i>
       </button>
+
+
+<!-- navbar starts -->
+<nav id="navbar-top" class="navbar navbar-expand-lg dota2-navbar fixed-top shadow-sm">
+  <div class="container-fluid px-5">
+
+   <div>
+      <h1 id="mainName" class="dota2-link full-name">Marco Allen A. Gianan</h1>
+      <h1 class="dota2-link short-name">M</h1>
+  </div>
+
+    <!-- Mobile menu button -->
+    <button class="navbar-toggler border-0 text-warning" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <i class="bi bi-menu-button-fill" style="font-size: 1.5rem;"></i>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-4" style="font-size: 1.1rem; font-weight: 500;">
+        <li class="nav-item">
+          <a class="nav-link dota2-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dota2-link" href="#service">Skill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dota2-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dota2-link" href="#portfolio">Portfolio</a>
+        </li>
+      </ul>
+       <!-- Contact button -->
+    <button class="btn ms-4 py-2 px-4 rounded-pill d-none d-md-block dota2-link"
+      style="background-color: var(--dota-gold); color: #181818; font-weight: 600;"
+      onclick="window.location.href='#contact-form'">Contact</button>
+  </div>
+</nav>
+<!-- navbar ends -->
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -282,7 +322,7 @@
       </div>
 
       <!-- Contact button -->
-      <button class="btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+      <button class="btn ms-4 py-2 px-4 rounded-pill d-none d-md-block dota2-link"
         style="background-color: var(--dota-gold); color: #181818; font-weight: 600;"
         onclick="window.location.href='#contact-form'">Contact</button>
     </div>
@@ -292,49 +332,60 @@
 
   <!-- home section starts  -->
 
-  <section class="home py-5 hover-glow" id="home">
-    <div class="container">
-      <div class="row align-items-center flex-column-reverse flex-md-row">
-        <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
-          <div>
-            <h1 class="fw-bold typewriter-animation" style="color: var(--dota-gold);">
-              Hi, I'm <span style="color: white;">Marco Allen A Gianan</span>
-            </h1>
-          </div>
+<section class="home py-5 hover-glow" id="home">
+  <div class="container">
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      
+      <!-- Text Content -->
+      <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+        <div>
+          <h1 class="fw-bold text-white">
+            Hi, I'm <span style="color: var(--dota-gold);">Marco Allen A Gianan</span>
+          </h1>
 
-          <div class="dropping-texts fw-semibold" style="color: var(--dota-gold);">
-            <div>Software Engineer</div>
+          <!-- Software Engineer Title -->
+          <h2 class="fw-semibold mt-2" style="color: var(--dota-gold); font-size: 1.75rem; letter-spacing: 0.5px; text-align: left; color: #b87333;">
+            Software Engineer
+          </h2>
+
+          <!-- Animated Roles -->
+          <div class="dropping-texts fw-semibold mt-2" style="color: var(--dota-gold); font-size: 1.2rem;">
             <div>Full-Stack Developer</div>
             <div>Problem Solver</div>
             <div>Tech Enthusiast</div>
           </div>
 
-          <p class="mb-3">I build scalable web applications and engineer solutions using modern technologies.</p>
+          <!-- Short Description -->
+          <p class="mb-3 mt-3 text-white" style="max-width: 480px;">
+            I build scalable web applications and engineer solutions using modern technologies.
+          </p>
+
+          <!-- Buttons -->
           <div class="mt-4">
-            <div class="d-flex flex-wrap gap-2">
+            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
               <a href="https://github.com/goof312" class="btn btn-dark sheen">
                 <i class="bi bi-github me-1"></i> GitHub
               </a>
-
-              <form action="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/" target="_blank">
-                <button type="submit" class="btn btn-primary sheen" anim="glow">
-                  <i class="bi bi-linkedin me-1"></i> LinkedIn
-                </button>
-              </form>
+              <a href="https://www.linkedin.com/in/gianan-marco-allen-a-b50769282/" target="_blank" class="btn btn-primary sheen">
+                <i class="bi bi-linkedin me-1"></i> LinkedIn
+              </a>
             </div>
-
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left">
-          <div class="hero-portrait-wrapper">
-            <span class="hero-portrait-bg"></span>
-            <img src="images/Marco with suit.png" alt="Marco Allen Gianan" class="hero-portrait-img">
-            <span class="hero-portrait-glow"></span>
           </div>
         </div>
       </div>
+
+      <!-- Hero Image -->
+      <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0" data-aos="fade-left">
+        <div class="hero-portrait-wrapper position-relative">
+          <span class="hero-portrait-bg"></span>
+          <img src="images/Marco with suit.png" alt="Marco Allen Gianan" class="hero-portrait-img img-fluid">
+          <span class="hero-portrait-glow"></span>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
 
   <!-- home section ends here -->

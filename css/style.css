@@ -168,6 +168,7 @@ section h2 {
   background: linear-gradient(90deg, #181818 60%, #2e1a09 100%) !important;
   border-bottom: 3px solid #caa552;
   box-shadow: 0 2px 16px #000a;
+  z-index: 9999;
 }
 
 .dota2-navbar .navbar-brand {
@@ -196,7 +197,6 @@ section h2 {
   width: 0;
   background: #caa552;
   transition: width 0.3s;
-  position: absolute;
   left: 0;
   bottom: -4px;
 }
@@ -1050,82 +1050,17 @@ button {
 /* This section is for Marco Allen A. Gianan Effect */
 
 
-.glitch-text {
-  font-size: 2rem;
-  font-weight: bold;
-  position: relative;
-  color: var(--dota-gold);
-  /* Use your main highlight color */
-  animation: glitch 2s infinite;
+.short-name {
+  display: none;
 }
-
-.glitch-text::before,
-.glitch-text::after {
-  content: 'Marco Allen A. Gianan';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-  animation: glitch 2s infinite;
-}
-
-.glitch-text::before {
-  color: var(--dota-red);
-  /* Red glitch trail */
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
-}
-
-.glitch-text::after {
-  color: var(--dota-green);
-  /* Green glitch trail */
-  clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
-}
-
-/* Here adjust base on screen size*/
 
 @media screen and (max-width: 576px) {
-  .glitch-text {
-    font-size: 5rem;
-    font-weight: bold;
-    position: relative;
-    color: #fff;
-    animation: glitch 2s infinite;
+  .full-name {
+    display: none;
   }
 
-  .glitch-text::before,
-  .glitch-text::after {
-    content: 'M';
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ff005e;
-    background: transparent;
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
-    animation: glitch 2s infinite;
-  }
-}
-
-@keyframes glitch {
-
-  0%,
-  100% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translate(-2px, 2px);
-  }
-
-  40% {
-    transform: translate(2px, -2px);
-  }
-
-  60% {
-    transform: translate(-1px, 1px);
-  }
-
-  80% {
-    transform: translate(1px, -1px);
+  .short-name {
+    display: block;
   }
 }
 
@@ -1200,23 +1135,18 @@ button {
   /* Optional: to match theme */
 }
 
-
-.dropping-texts>div:nth-child(1) {
-  animation: roll 10s linear infinite 0s;
+.dropping-texts > div:nth-child(1) {
+  animation: roll 12s linear infinite 0s;
 }
-
-.dropping-texts>div:nth-child(2) {
-  animation: roll 10s linear infinite 0s;
+.dropping-texts > div:nth-child(2) {
+  animation: roll 12s linear infinite 3s;
 }
-
-.dropping-texts>div:nth-child(3) {
-  animation: roll 10s linear infinite 0s;
+.dropping-texts > div:nth-child(3) {
+  animation: roll 12s linear infinite 6s;
 }
-
-.dropping-texts>div:nth-child(4) {
-  animation: roll2 10s linear infinite 0s;
+.dropping-texts > div:nth-child(4) {
+  animation: roll 12s linear infinite 9s;
 }
-
 @keyframes roll {
   0% {
     font-size: 0px;
