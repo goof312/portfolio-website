@@ -4,20 +4,21 @@
 
 /* Dota 2 Inspired Colors */
 :root {
-  --dota-bg: #181818;
-  --dota-gold: #caa552;
-  --dota-brown: #2e1a09;
-  --dota-red: #d32f2f;
-  --dota-green: #4e9a06;
-  --dota-gray: #232323;
-  --dota-text: #e4e6eb;
-  --text-muted: #b0b0b0;
-  --card-bg: #1f1f1f;
-  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  --transition-fast: 0.2s ease;
-  --transition-medium: 0.3s ease;
-}
+  /* 🎨 Gold Accent Shades */
+  --gold: #caa552;
+  --gold-dark: #a58a42;
+  --gold-light: #e1c78d;
 
+  /* 🎨 Charcoal Background Shades */
+  --charcoal: #181818;
+  --charcoal-light: #222222;
+  --charcoal-dark: #121212;
+
+  /* 🎨 Off-White Text Shades */
+  --text-main: #f0f0f0;
+  --text-muted: #b0b0b0;
+  --text-inverse: #ffffff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -27,20 +28,19 @@
 html,
 body {
   font-family: 'Rajdhani', sans-serif;
-  background-color: var(--dota-bg);
-  color: var(--dota-text);
+  background-color: var(--charcoal); /* Main background */
+  color: var(--text-main);           /* Primary text color */
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: var(--dota-gold);
-  transition: color var(--transition-fast);
+a:hover,
+a:focus {
+  color: var(--gold-light);
 }
 
-a:hover {
-  color: var(--dota-red);
+button:hover {
+  background-color: var(--gold-dark);
 }
 
 
@@ -56,13 +56,15 @@ a:hover {
   margin: 0 1rem;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  color: var(--dota-gold);
+  color: var(--text-main); /* Changed from var(--dota-gold) for contrast */
   position: relative;
+  text-decoration: none;
+  border-bottom: 2;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--dota-red);
+  color: var(--gold); /* Highlighted with gold on hover/active */
 }
 
 .navbar a::after {
@@ -72,35 +74,30 @@ a:hover {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: var(--dota-gold);
-  transition: width var(--transition-medium);
+  background: var(--gold);
+  transition: width 0.3s ease;
 }
 
 .navbar a:hover::after,
 .navbar a.active::after {
   width: 100%;
 }
-
-
 /* === Hero Section === */
-.hero {
-  background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg') center/cover no-repeat;
-  padding: 6rem 1rem;
-  text-align: center;
-  border-bottom: 4px solid var(--dota-red);
+section.home {
+  background: linear-gradient(to right, var(--charcoal-light), var(--dark));
+  position: relative;
+  z-index: 1;
 }
 
-/* === Section === */
-section {
-  background: var(--dota-gray);
-  border-radius: 12px;
-  padding: 3rem 1rem;
-  margin: 2rem 0;
-  box-shadow: var(--card-shadow);
+.hero-portrait-wrapper {
+  border: 3px solid var(--gold);
+  border-radius: 16px;
+  padding: 8px;
+  background-color: rgba(255, 215, 0, 0.05); /* faint gold glow */
 }
 
 section h2 {
-  color: var(--dota-gold);
+  color: var(--gold);
   font-size: 2rem;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -109,15 +106,15 @@ section h2 {
 .logo {
   font-size: 2.5rem;
   font-family: 'Orbitron', sans-serif;
-  color: var(--dota-gold);
+  color: var(--gold);
 }
 
 /* === Buttons === */
 .cta-button,
 .c-btn,
 .btn-primary {
-  background: var(--dota-gold);
-  color: var(--dota-bg);
+  background: var(--gold);
+  color: var(--bg);
   font-weight: bold;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -129,7 +126,7 @@ section h2 {
 .cta-button:hover,
 .c-btn:hover,
 .btn-primary:hover {
-  background: var(--dota-red);
+  background: var(--red);
   color: white;
 }
 
@@ -146,7 +143,7 @@ section h2 {
 }
 
 .cta-button {
-  background: var(--dota-red);
+  background: var(--red);
   color: #fff;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -163,7 +160,7 @@ section h2 {
   color: #000;
 }
 
-/* Dota 2 Navbar */
+/* 2 Navbar */
 .dota2-navbar {
   background: linear-gradient(90deg, #181818 60%, #2e1a09 100%) !important;
   border-bottom: 3px solid #caa552;
@@ -208,7 +205,7 @@ section h2 {
 
 /* Sections */
 section {
-  background: var(--dota-gray);
+  background: gray;
   border-radius: 12px;
   margin: 2rem 0;
   padding: 3rem 0;
@@ -217,7 +214,7 @@ section {
 
 section h2 {
   font-size: 2rem;
-  color: var(--dota-gold);
+  color: var(--gold);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -225,7 +222,6 @@ section h2 {
 .about p,
 .contact p,
 .projects p {
-  text-align: center;
   max-width: 800px;
   margin: 0 auto;
   color: var(--text-muted);
@@ -243,7 +239,7 @@ section h2 {
 .skill-list li {
   background: #292929;
   padding: 1rem 1.5rem;
-  border: 1px solid var(--dota-red);
+  border: 1px solid var(--red);
   border-radius: 8px;
   list-style: none;
   font-weight: bold;
@@ -267,7 +263,7 @@ section h2 {
 }
 
 .project-item h3 {
-  color: var(--dota-gold);
+  color: var(--gold);
 }
 
 .project-item:hover {
@@ -278,22 +274,22 @@ section h2 {
 .footer {
   text-align: center;
   padding: 2rem 0;
-  border-top: 2px solid var(--dota-red);
+  border-top: 2px solid var(--red);
   color: var(--text-muted);
   background-color: #101010;
 }
 
 .dota2-footer {
   background: linear-gradient(90deg, var(--dota-bg) 60%, var(--dota-brown) 100%);
-  border-top: 4px solid var(--dota-gold);
+  border-top: 4px solid var(--gold);
 }
 
 .text-gold {
-  color: var(--dota-gold) !important;
+  color: var(--gold) !important;
 }
 
 .dota2-link {
-  color: var(--dota-gold);
+  color: var(--gold);
   font-weight: bold;
   font-family: 'Orbitron', serif;
   margin: 0 10px;
@@ -302,13 +298,13 @@ section h2 {
 }
 
 .dota2-link:hover {
-  color: var(--dota-red);
+  color: var(--red);
 }
 
 .dota2-btn {
   background: var(--dota-brown);
-  color: var(--dota-gold);
-  border: 2px solid var(--dota-gold);
+  color: var(--gold);
+  border: 2px solid var(--gold);
   margin: 0 8px;
   font-size: 1.3rem;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
@@ -316,9 +312,9 @@ section h2 {
 }
 
 .dota2-btn:hover {
-  background: var(--dota-gold);
+  background: var(--gold);
   color: var(--dota-brown);
-  box-shadow: 0 0 16px var(--dota-gold);
+  box-shadow: 0 0 16px var(--gold);
 }
 
 /* Section backgrounds */
@@ -332,7 +328,7 @@ section {
 /* Buttons */
 .c-btn,
 .btn-primary {
-  background: var(--dota-gold);
+  background: var(--gold);
   color: #181818;
   border: none;
   font-weight: bold;
@@ -348,9 +344,9 @@ section {
 /* Skill/Portfolio Cards */
 .card {
   background: #232323;
-  border: 2px solid var(--dota-gold);
+  border: 2px solid var(--gold);
   border-radius: 1rem;
-  color: var(--dota-gold);
+  color: var(--gold);
   box-shadow: 0 2px 12px #000a;
   transition: box-shadow 0.2s, border-color 0.2s;
 }
@@ -365,7 +361,7 @@ section {
 
 /* Progress/Skill Circles */
 .circular-progress {
-  background: conic-gradient(var(--dota-gold) 0 75%, #232323 0 100%);
+  background: conic-gradient(var(--gold) 0 75%, #232323 0 100%);
 }
 
 .circular-progress::before {
@@ -375,13 +371,12 @@ section {
 /* Portfolio Badges */
 .badge.bg-secondary {
   background: var(--dota-brown) !important;
-  color: var(--dota-gold) !important;
-  border: 1px solid var(--dota-gold);
+  color: var(---gold) !important;
+  border: 1px solid var(--gold);
 }
 
 /* Section Headings */
 .heading small {
-  color: var(--dota-red);
   font-family: 'Orbitron', serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -411,20 +406,15 @@ section {
 }
 
 /* Optional: Add a subtle Dota 2 background image to .home or .skill */
-.home,
-.skill {
-
-  background-blend-mode: multiply;
-}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
-  background: var(--dota-brown);
+  background: var(--charcoal-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--dota-gold);
+  background: var(--gold);
   border-radius: 8px;
 }
 
@@ -647,8 +637,8 @@ h6.fw-semibold {
 /* === Portfolio Filter Buttons === */
 #myBtnContainer .filter-item {
   background: var(--card-bg);
-  border: 1px solid var(--dota-gold);
-  color: var(--dota-gold);
+  border: 1px solid var(--gold);
+  color: var(--gold);
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
   font-weight: bold;
@@ -659,7 +649,7 @@ h6.fw-semibold {
 
 #myBtnContainer .filter-item:hover,
 #myBtnContainer .filter-item.active {
-  background: var(--dota-gold);
+  background: var(--gold);
   color: var(--dota-bg);
 }
 
@@ -855,7 +845,7 @@ button {
 }
 
 .custom-dark-modal .modal-title {
-  color: var(--dota-gold);
+  color: var(--gold);
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -870,7 +860,7 @@ button {
 }
 
 .custom-dark-modal a {
-  color: var(--dota-gold);
+  color: var(--gold);
   text-decoration: underline;
 }
 
@@ -880,7 +870,7 @@ button {
 
 /* Buttons */
 .custom-btn {
-  background-color: var(--dota-gold);
+  background-color: var(--gold);
   color: #000;
   border: none;
   transition: all 0.3s ease;
@@ -935,7 +925,7 @@ button {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: var(--dota-gold);
+  background: var(--gold);
   transform: translateX(-50%);
 }
 
@@ -977,7 +967,7 @@ button {
   top: 20px;
   width: 20px;
   height: 20px;
-  background: var(--dota-gold);
+  background: var(--gold);
   border-radius: 50%;
   z-index: 1;
 }
@@ -1017,7 +1007,7 @@ button {
   }
 
   .timeline-event .content {
-    border-left: 6px solid var(--dota-gold);
+    border-left: 6px solid var(--gold);
     /* background: #111; */
     border-radius: 10px;
     padding: 1rem 1.5rem;
@@ -1131,7 +1121,7 @@ button {
   position: absolute;
   font-weight: 600;
   /* Increased from 300 to 600 for better legibility */
-  color: var(--dota-gold);
+  color: var(--gold);
   /* Optional: to match theme */
 }
 
@@ -1201,4 +1191,151 @@ button {
     font-size: 0px;
     opacity: 0;
   }
+}
+
+.logo-symbol-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gear {
+  width: 60px;
+  height: 60px;
+  background-color: var(--dota-bg);
+  border: 4px solid var(--gold);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(202, 165, 82, 0.2);
+}
+
+/* Gear teeth (simple illusion) */
+.gear::before,
+.gear::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    var(--gold) 0deg 5deg,
+    transparent 5deg 15deg
+  );
+  border-radius: 50%;
+  z-index: 0;
+  mask-image: radial-gradient(circle, transparent 35%, black 36%);
+}
+
+/* Inner initials */
+.initials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--dota-text);
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1;
+}
+.logo-symbol-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle with initials inside */
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--dota-bg);
+  color: var(--dota-text);
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgba(202, 165, 82, 0.15); /* subtle golden glow */
+  transition: transform var(--transition-medium);
+}
+
+/* Optional: Hover effect */
+.logo-circle:hover {
+  transform: scale(1.05);
+}
+/* Apply dark-themed modal with your colors */
+.custom-dark-modal .modal-content {
+  background-color: var(--charcoal); /* main background */
+  color: var(--text-main); /* main text */
+  border: 2px solid var(--gold-dark); /* subtle border */
+  border-radius: 12px;
+  box-shadow: 0 0 20px var(--gold-light);
+}
+
+.custom-dark-modal .modal-header {
+  background-color: var(--charcoal-light);
+  border-bottom: 1px solid var(--gold);
+  color: var(--text-inverse);
+}
+
+.custom-dark-modal .modal-body h6 {
+  color: var(--gold); /* heading highlight */
+}
+
+.custom-dark-modal .modal-body ul li::marker {
+  color: var(--gold-light); /* bullet markers */
+}
+
+.custom-dark-modal .modal-body a {
+  color: var(--gold);
+  text-decoration: none;
+}
+.custom-dark-modal .modal-body a:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+.custom-dark-modal .btn-close-white {
+  filter: invert(100%);
+}
+.floating-icon {
+  width: 48px;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px var(--gold));
+  transition: transform 0.3s ease;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+  
+#Resume-download-button:hover {
+  box-shadow: 0 0 12px var(--gold-light), 0 0 24px var(--gold);
+  transform: translateY(-2px);
+}
+
+/* Better contact details spacing and sizing */
+.contact-details .d-flex {
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1.2rem;
+}
+.contact-details i {
+  font-size: 1.7rem !important;
+}
+.contact-details span, .contact-details p {
+  font-size: 1.1rem !important;
+  margin-bottom: 0;
 }
