@@ -158,15 +158,3 @@ let toggle = (el) => el.classList.toggle("toggled");
 let clickTog = (el) => click(el, () => toggle(el));
 anims.map(clickTog);
 
-// This is for the Marco Allen changing to M for smaller devices
-function adjustName() {
-  const nameElement = document.getElementById("mainName");
-  if (window.innerWidth <= 700) {
-    nameElement.textContent = "M";
-  } else {
-    nameElement.textContent = "Marco Allen A. Gianan";
-  }
-}
-
-window.addEventListener("load", adjustName);
-window.addEventListener("resize", adjustName);
