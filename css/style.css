@@ -19,6 +19,7 @@
   --text-muted: #b0b0b0;
   --text-inverse: #ffffff;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +29,10 @@
 html,
 body {
   font-family: 'Rajdhani', sans-serif;
-  background-color: var(--charcoal); /* Main background */
-  color: var(--text-main);           /* Primary text color */
+  background-color: var(--charcoal);
+  /* Main background */
+  color: var(--text-main);
+  /* Primary text color */
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -56,7 +59,8 @@ button:hover {
   margin: 0 1rem;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  color: var(--text-main); /* Changed from var(--dota-gold) for contrast */
+  color: var(--text-main);
+  /* Changed from var(--dota-gold) for contrast */
   position: relative;
   text-decoration: none;
   border-bottom: 2;
@@ -64,7 +68,8 @@ button:hover {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--gold); /* Highlighted with gold on hover/active */
+  color: var(--gold);
+  /* Highlighted with gold on hover/active */
 }
 
 .navbar a::after {
@@ -82,6 +87,7 @@ button:hover {
 .navbar a.active::after {
   width: 100%;
 }
+
 /* === Hero Section === */
 section.home {
   background: linear-gradient(to right, var(--charcoal-light), var(--dark));
@@ -89,11 +95,27 @@ section.home {
   z-index: 1;
 }
 
+@media (max-width: 576px) {
+  #home-container {
+    margin-top: 100px;
+    padding: 100px 0 100px 0;
+  }
+
+  .full-name {
+    display: none;
+  }
+
+  .short-name {
+    display: inline;
+  }
+}
+
 .hero-portrait-wrapper {
   border: 3px solid var(--gold);
   border-radius: 16px;
   padding: 8px;
-  background-color: rgba(255, 215, 0, 0.05); /* faint gold glow */
+  background-color: rgba(255, 215, 0, 0.05);
+  /* faint gold glow */
 }
 
 section h2 {
@@ -103,11 +125,48 @@ section h2 {
   margin-bottom: 1.5rem;
 }
 
-.logo {
-  font-size: 2.5rem;
-  font-family: 'Orbitron', sans-serif;
-  color: var(--gold);
+/* Dramatic Logo Glow */
+.logo-symbol-wrapper {
+  position: relative;
 }
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, #caa55255 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: logoPulse 2.5s infinite alternate;
+}
+
+@keyframes logoPulse {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0 24px 6px #caa55288;
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 40px 12px #caa552cc;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 /* === Buttons === */
 .cta-button,
@@ -1055,13 +1114,18 @@ button {
 }
 
 #btn-back-to-top {
-  margin-left: auto;
-  background-color: var(--dota-gold);
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 
-
-#btn-back-to-top:hover {
-  color: red;
+#btn-back-to-top.show {
+  display: inline-block;
+  opacity: 1;
 }
 
 /* Typewriter Effect */
@@ -1069,8 +1133,7 @@ button {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid rgba(255, 255, 255, .75);
-  animation:
-    typewriter 3s steps(30, end) 1s 1 normal both,
+  animation: typewriter 3s steps(30, end) 1s 1 normal both,
     blinkingCursor 600ms steps(40, end) infinite;
   font-size: 40px;
 }
@@ -1125,18 +1188,22 @@ button {
   /* Optional: to match theme */
 }
 
-.dropping-texts > div:nth-child(1) {
+.dropping-texts>div:nth-child(1) {
   animation: roll 12s linear infinite 0s;
 }
-.dropping-texts > div:nth-child(2) {
+
+.dropping-texts>div:nth-child(2) {
   animation: roll 12s linear infinite 3s;
 }
-.dropping-texts > div:nth-child(3) {
+
+.dropping-texts>div:nth-child(3) {
   animation: roll 12s linear infinite 6s;
 }
-.dropping-texts > div:nth-child(4) {
+
+.dropping-texts>div:nth-child(4) {
   animation: roll 12s linear infinite 9s;
 }
+
 @keyframes roll {
   0% {
     font-size: 0px;
@@ -1216,11 +1283,9 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: repeating-conic-gradient(
-    from 0deg,
-    var(--gold) 0deg 5deg,
-    transparent 5deg 15deg
-  );
+  background: repeating-conic-gradient(from 0deg,
+      var(--gold) 0deg 5deg,
+      transparent 5deg 15deg);
   border-radius: 50%;
   z-index: 0;
   mask-image: radial-gradient(circle, transparent 35%, black 36%);
@@ -1238,6 +1303,7 @@ button {
   font-family: 'Segoe UI', sans-serif;
   z-index: 1;
 }
+
 .logo-symbol-wrapper {
   display: flex;
   align-items: center;
@@ -1258,7 +1324,8 @@ button {
   font-size: 1.2rem;
   font-weight: 700;
   font-family: 'Segoe UI', sans-serif;
-  box-shadow: 0 0 10px rgba(202, 165, 82, 0.15); /* subtle golden glow */
+  box-shadow: 0 0 10px rgba(202, 165, 82, 0.15);
+  /* subtle golden glow */
   transition: transform var(--transition-medium);
 }
 
@@ -1266,11 +1333,15 @@ button {
 .logo-circle:hover {
   transform: scale(1.05);
 }
+
 /* Apply dark-themed modal with your colors */
 .custom-dark-modal .modal-content {
-  background-color: var(--charcoal); /* main background */
-  color: var(--text-main); /* main text */
-  border: 2px solid var(--gold-dark); /* subtle border */
+  background-color: var(--charcoal);
+  /* main background */
+  color: var(--text-main);
+  /* main text */
+  border: 2px solid var(--gold-dark);
+  /* subtle border */
   border-radius: 12px;
   box-shadow: 0 0 20px var(--gold-light);
 }
@@ -1282,17 +1353,20 @@ button {
 }
 
 .custom-dark-modal .modal-body h6 {
-  color: var(--gold); /* heading highlight */
+  color: var(--gold);
+  /* heading highlight */
 }
 
 .custom-dark-modal .modal-body ul li::marker {
-  color: var(--gold-light); /* bullet markers */
+  color: var(--gold-light);
+  /* bullet markers */
 }
 
 .custom-dark-modal .modal-body a {
   color: var(--gold);
   text-decoration: none;
 }
+
 .custom-dark-modal .modal-body a:hover {
   color: var(--gold-light);
   text-decoration: underline;
@@ -1301,6 +1375,7 @@ button {
 .custom-dark-modal .btn-close-white {
   filter: invert(100%);
 }
+
 .floating-icon {
   width: 48px;
   animation: float 3s ease-in-out infinite;
@@ -1313,14 +1388,17 @@ button {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
-  
+
 #Resume-download-button:hover {
   box-shadow: 0 0 12px var(--gold-light), 0 0 24px var(--gold);
   transform: translateY(-2px);
@@ -1332,10 +1410,13 @@ button {
   gap: 16px;
   margin-bottom: 1.2rem;
 }
+
 .contact-details i {
   font-size: 1.7rem !important;
 }
-.contact-details span, .contact-details p {
+
+.contact-details span,
+.contact-details p {
   font-size: 1.1rem !important;
   margin-bottom: 0;
 }
