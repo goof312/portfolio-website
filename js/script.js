@@ -41,7 +41,6 @@ $(document).ready(function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section[id]");
-  console.log(sections);
   const navLinks = document.querySelectorAll(".nav-link");
 
   window.addEventListener("scroll", () => {
@@ -52,7 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const sectionHeight = section.offsetHeight;
 
       if (window.scrollY >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id");
+        //check if section is grouped under a nav target
+        const group = section.getAttribute("data-nav");
+        current = group ? group : section.getAttribute("id")
       }
     });
 

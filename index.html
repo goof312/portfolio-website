@@ -346,16 +346,27 @@
     <div class="container-fluid px-5">
 
       <!--  Logo -->
-      <div class="d-flex align-items-center">
-        <div class="logo-symbol-wrapper me-3 position-relative">
-          <!-- Glowing effect -->
-          <span class="logo-glow"></span>
-          <div class="logo-circle fw-bold d-flex align-items-center justify-content-center"
-            style="background-color: var(--gold); color: var(--charcoal); font-weight: bold; width: 54px; height: 54px; font-size: 1.7rem; border-radius: 50%; box-shadow: 0 0 24px 6px #caa55288, 0 0 0 4px #232323;">
-            MG
-          </div>
+      <div class="logo-symbol-wrapper me-3 position-relative" style="width: 60px; height: 60px;">
+        <!-- Glowing effect -->
+        <span class="logo-glow position-absolute top-0 start-0 w-100 h-100" style="
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 32px 8px #caa55299, 0 0 0 6px #232323;
+    z-index: 0;
+  "></span>
+        <div class="logo-circle fw-bold d-flex align-items-center justify-content-center position-relative" style="
+      background: linear-gradient(135deg, var(--gold) 70%, #fffbe6 100%);
+      color: var(--charcoal);
+      font-weight: bold;
+      width: 54px;
+      height: 54px;
+      font-size: 1.7rem;
+      border-radius: 50%;
+      box-shadow: 0 0 12px 2px #caa55288, 0 0 0 4px #232323;
+      z-index: 1;
+    ">
+          MG
         </div>
-
       </div>
 
       <!-- Toggle button for mobile -->
@@ -380,7 +391,6 @@
 
         <!-- Contact Button -->
         <button class="btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
-          style="background-color: var(--gold); color: var(--charcoal); font-weight: 600;"
           onclick="window.location.href='#contact-form'">Contact</button>
       </div>
 
@@ -389,7 +399,7 @@
   <!-- Navbar Ends -->
   <!-- home section starts  -->
 
-  <!-- Modernized Home Section -->
+  <!-- Home Section -->
   <section class="home d-flex align-items-center min-vh-100 py-0 hover-glow" id="home"
     style="background: linear-gradient(120deg, var(--charcoal-light) 60%, var(--dark) 100%); position: relative;">
     <div class="container-fluid px-4 px-lg-5" style="max-width: 1200px; margin: 0 auto;" id="home-container">
@@ -398,9 +408,10 @@
         <!-- Text Content -->
         <div class="col-12 col-lg-6 text-center text-lg-start" data-aos="fade-right">
           <div>
-            <h1 class="fw-bold text-white mb-3" style="font-size: 2.5rem; line-height: 1.1;">
+            <h1 class="typewriter-animation fw-bold text-white mb-3" style="font-size: 2.5rem; line-height: 1.1;">
               Hi, I'm <span class="d-inline-block d-lg-inline" style="color: var(--gold);">Marco Allen A. Gianan</span>
             </h1>
+
             <h2 class="fw-semibold mb-3" style="color: #b87333; font-size: 2rem; letter-spacing: 1px;">
               Software Engineer
             </h2>
@@ -414,6 +425,14 @@
             <p class="mb-4 text-white-50" style="max-width: 480px;">
               I build scalable web applications and engineer solutions using modern technologies.
             </p>
+
+            <!-- Experience Highlight -->
+            <div class="mb-4">
+              <span class="badge rounded-pill"
+                style="background: var(--gold); color: var(--charcoal); font-size: 0.9em; padding: 0.7em 1.3em;">
+                <i class="bi bi-briefcase-fill me-2"></i>
+                Software Enginerr Intern at STMicroelectronics</span>
+            </div>
             <!-- Buttons -->
             <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
               <a href="https://github.com/goof312" class="btn sheen px-4 py-2"
@@ -455,8 +474,10 @@
       <!-- ABOUT ME -->
       <div class="row align-items-start mb-5">
         <div class="col-md-8 mb-4 mb-md-0">
+
+
           <div class="heading mb-4">
-            <small class="text-uppercase" style="color: var(--gold);">About Me</small>
+            <h1 class="fw-bold" style="color: var(--gold);">About Me</h1>
             <h3 class="fw-bold">Passionate About Building Real-World Solutions</h3>
           </div>
           <p class="text-muted">
@@ -466,7 +487,7 @@
           </p>
           <div class="mt-4">
             <a href="files/Resume - Marco Allen Gianan (2).pdf" download="Gianan_MarcoAllen_Resume"
-              class="btn py-3 px-5 rounded-pill d-inline-flex align-items-center gap-2"
+              class="report-btn py-3 px-5 rounded-pill d-inline-flex align-items-center gap-2"
               style="background-color: var(--gold); color: var(--charcoal-dark); font-weight: 600;"
               id="Resume-download-button">
               <i class="bi bi-download"></i> Download Resume
@@ -519,7 +540,7 @@
 
       <!-- EXPERTISE -->
       <div class="text-center mb-4">
-        <small class="text-uppercase fw-semibold" style="color: var(--gold);">My Expertise</small>
+        <h2 class="fw-bold" style="color: var(--gold);">My Expertise</h2>
       </div>
       <div class="row justify-content-evenly">
         <!-- Full-Stack Development -->
@@ -579,12 +600,17 @@
 
   <!-- Narrative/practicum Section -->
   <section id="practicum" class="py-5" data-aos="fade-up" data-aos-duration="1200"
-    style="background-color: var(--charcoal-light);">
+    style="background-color: var(--charcoal-light);" data-nav="portfolio">
     <div class="container-fluid px-5" style="max-width: 1600px; margin: 0 auto;">
       <div class="text-center mb-5">
         <h2 class="fw-bold display-5" style="color: var(--gold);">⚡ My Practicum Highlights</h2>
         <p class="fs-5 fst-italic" style="color: var(--gold-dark);">Not just a requirement — this was my dev journey
           level-up arc.</p>
+
+        <!-- Practicum Image Here -->
+        <img src="images/Practicum photo.jpg" alt="Practicum at STMicroelectronics"
+          class="img-fluid rounded shadow my-4 d-block mx-auto"
+          style="max-width: 400px; width: 100%; border-radius: 18px;">
       </div>
 
       <div class="row">
@@ -717,7 +743,7 @@
 
       <!-- Download Report -->
       <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
-        <a href="files/narrative_Gianan.pdf" target="_blank" class="btn report-btn">
+        <a href="files/narrative_Gianan.pdf" target="_blank" class="report-btn">
           📥 View Full Report
         </a>
       </div>
@@ -731,7 +757,7 @@
   <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000"
     style="background-color: var(--charcoal-light);">
     <div class="heading text-center pt-5">
-      <h3 class="fw-bold" style="font-family: 'Orbitron', serif; color: var(--gold);">Check My Portfolio</h3>
+      <h1 class="fw-bold" style="color: var(--gold);">Check My Projects</h1>
     </div>
     <!-- Filter Buttons -->
     <div id="myBtnContainer" class="text-center mt-4">
@@ -859,10 +885,10 @@
   <!-- PORTFOLIO SECTION ENDS -->
   <!-- Certificates Section -->
   <section id="certificates" class="py-5" data-aos="fade-up" data-aos-duration="1000"
-    style="background-color: var(--charcoal-light);">
+    style="background-color: var(--charcoal-light);" data-nav="portfolio">
     <div class="container-fluid px-5" style="max-width: 1600px; margin: 0 auto;">
       <div class="text-center mb-5">
-        <h3 class="fw-bold" style="font-family: 'Orbitron', serif; color: var(--gold);">Certificates</h3>
+        <h1 class="fw-bold" style="color: var(--gold);">Certificates</h1>
         <p class="text-light">Recognition of seminars, trainings, and courses I have completed.</p>
       </div>
 
@@ -893,6 +919,8 @@
             </div>
           </div>
         </div>
+
+
 
         <!-- Certificate 2 -->
         <div class="col-md-6 mb-4">
@@ -977,7 +1005,59 @@
           </div>
         </div>
 
+        <!-- Power BI Certificate -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow bg-dark border-0 h-100">
+            <!-- Image Container -->
+            <div class="d-flex align-items-center justify-content-center bg-black"
+              style="height: 200px; overflow: hidden;">
+              <img src="images/Powerbi.jpg" alt="Certificate of Completion" class="img-fluid rotate-img"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <div class="p-3">
+              <h5 class="card-title" style="color: var(--gold);">Power Bi Training
+              </h5>
+              <p class="text-muted mb-1">Issued by STMicroelectronics inc. | July 2025 </p>
+              <ul class="mb-0">
+                <li>Introduction to Power BI and Data Visualization Concepts</li>
+                <li>Connecting to Various Data Sources in Power BI</li>
+                <li>Data Cleaning and Transformation using Power Query</li>
+                <li>Creating Interactive Reports and Dashboards</li>
+                <li>Using DAX (Data Analysis Expressions) for Calculations</li>
+                <li>Publishing and Sharing Reports on Power BI Service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 7 QC Tools Certificate -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow bg-dark border-0 h-100">
+            <!-- Image Container -->
+            <div class="d-flex align-items-center justify-content-center bg-black"
+              style="height: 200px; overflow: hidden;">
+              <img src="images/Powerbi.jpg" alt="Certificate of Completion" class="img-fluid rotate-img"
+                style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <div class="p-3">
+              <h5 class="card-title" style="color: var(--gold);">7 QC Tools Training</h5>
+              <p class="text-muted mb-1">Issued by STMicroelectronics inc. | July 2025</p>
+              <ul class="mb-0">
+                <li>Introduction to Quality Control and Continuous Improvement</li>
+                <li>Overview of the 7 Basic QC Tools</li>
+                <li>Check Sheets for Data Collection</li>
+                <li>Pareto Charts for Prioritizing Issues</li>
+                <li>Cause-and-Effect (Fishbone) Diagrams</li>
+                <li>Control Charts for Monitoring Processes</li>
+                <li>Histograms and Data Distribution</li>
+                <li>Scatter Diagrams and Correlation Analysis</li>
+                <li>Flowcharts for Visualizing Processes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
   </section>
 
 
@@ -986,10 +1066,10 @@
 
   <!-- Achievements Section -->
   <section id="achievements" class="py-5" data-aos="fade-up" data-aos-duration="1000"
-    style="background-color: var(--charcoal-light);">
+    style="background-color: var(--charcoal-light);" data-nav="portfolio">
     <div class="container-fluid px-5" style="max-width: 1600px; margin: 0 auto;">
       <div class="text-center mb-5">
-        <h2 class="fw-bold" style="font-family: 'Orbitron', serif; color: var(--gold);">Achivement</h2>
+        <h1 class="fw-bold" style="color: var(--gold);">Achivements</h1>
         <p class="" style="color: var(--text);">Notable accomplishments and awards I've received throughout my academic
           journey.</p>
       </div>
@@ -1022,10 +1102,10 @@
 
   <!-- Seminar Section STARTS -->
   <section id="seminars" class="py-5" data-aos="fade-up" data-aos-duration="1000 st"
-    style="background-color: var(--charcoal-light);">
+    style="background-color: var(--charcoal-light);" data-nav="portfolio">
     <div class="container-fluid px-5" style="max-width: 1600px; margin: 0 auto;">
       <div class="text-center mb-5">
-        <h3 class="fw-bold" style="font-family: 'Orbitron', serif; color: var(--gold);">Seminars & Workshops</h3>
+        <h1 class="fw-bold" style="color: var(--gold);">Seminar & Workshops </h1>
         <p class="text-light">Recognition of seminars, lectures, and workshops I have attended or facilitated.</p>
       </div>
       <div class="row g-4 justify-content-center">
@@ -1106,7 +1186,7 @@
       <h3 style="color: var(--gold);">Any Questions? Feel Free to Contact</h3>
     </div>
 
-    <div class="row justify-content-evenly">
+    <div class="row justify-content-center">
       <!-- Contact Details -->
       <div class="col-md-5 col-10 contact-details text-light" data-aos="slide-right">
         <!-- Phone -->
@@ -1165,7 +1245,7 @@
       </div>
     </div>
   </section>
-  <!-- contact section ends here -->
+  <!-- contact section ends here
 
 
 
